@@ -21,8 +21,7 @@
               "src/assets",
               "src/favicon.ico"
             ],
-            "styles": [
-              "styles.scss",
+            "styles": ["src/styles.scss",
               "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
             "scripts": []
@@ -74,9 +73,7 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "src/tsconfig.spec.json",
             "scripts": [],
-            "styles": [
-              "styles.scss"
-            ],
+            "styles": ["src/styles.scss"],
             "assets": [
               "src/assets",
               "src/favicon.ico"
@@ -131,7 +128,7 @@
   "schematics": {
     "@schematics/angular:component": {
       "prefix": "app",
-      "style": "css"
+      "style": "scss"
     },
     "@schematics/angular:directive": {
       "prefix": "app"
