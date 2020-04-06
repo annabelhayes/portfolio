@@ -1,3 +1,51 @@
+/* general styling */
+.container {
+  padding-top: 60px;
+  text-align: center;
+}
+
+.first-row {
+    margin-top: 80px;
+}
+
+.main-title-first-row {
+    height: 300px;
+}
+.main-title-second-row {
+    height: 200px;
+}
+
+@media only screen and (max-width: 692px) {
+  .main-title-first-row {
+    height: 200px;
+}
+  .main-title-second-row {
+    height: 200px;
+}
+}
+
+.main-title {
+font-family: 'Noto Sans KR', sans-serif;
+color: #33322E ;
+font-weight: bold;
+font-size: 60px;
+}
+
+.hidden {
+  display: none !important;
+  }
+
+/* develop svg styling */
+
+.svg-2, .svg-3 {
+  display:inline-block;
+  vertical-align: center;
+  position: relative;
+  height: 1.2em;
+  width: 1.2em;
+  margin-bottom: 20px;
+}
+
 .svg-3 > path {
   stroke-width: 22;
   stroke-dasharray: 860;
@@ -10,69 +58,198 @@
   stroke-dashoffset: 861;
 }
 
+/* design styling */
+#innertitle {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: bold;
+  font-size: 60px;
+  color:#86A2A6 !important;
+}
+
+.text-dynamic, .dynamic-wrapper {
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index: 2;
+    transition: all ease 2s;
+}
+
+/* improve svg styling */
+.svg-arrow {
+  position: absolute;
+  height: 4em;
+  width: 2em;
+  margin-left: -200px;
+  top: 80%;
+  margin-top: -50px;
+}
+
+.svg-arrow > path {
+  stroke-width: 1.5;
+  stroke-dasharray: 96;
+  stroke-dashoffset: 96;
+}
+.svg-container {
+	position: relative;
+}
+
+/* create svg and text styling */
+.roller {
+  display: none !important;
+}
+
+
+.svg-roller-container {
+	position: relative;
+}
+
+.svg-roller {
+  z-index:1000;
+  position: absolute;
+  height: 1.5em;
+  width: 1.5em;
+  margin-left: -140px;
+  top: 80%;
+  margin-top: 0px;
+
+}
+
+.create-text {
+    position:relative;
+}
+
+
+ .cr-animation {
+    animation:changegreen 1.5s forwards;
+    animation-delay: 0.4s;
+}
+
+ .ea-animation {
+    animation:changeyellow 1s forwards;
+    animation-delay: 2s;
+ }
+
+ .te-animation {
+    animation:changeblue 1s forwards;
+     animation-delay: 3s;
+}
+
+
+/* ANIMATIONS */
+/* design animation */
+.design-animation {
+  animation-delay: 0s;
+  animation: 3s slideLeft;
+  animation-fill-mode: forwards;
+}
+
+/* develop animation */
 .line-animation {
 animation: draw 0.5s forwards;
 animation-delay:1.2s;
 }
-
-
 .bracket1-animation {
   animation: draw 1.5s forwards;
 }
-
 .bracket2-animation {
 animation: draw 1.5s forwards;
 animation-delay:1.5s;
 }
 
-.hidden {
-  display:none
+/* improve animation */
+.bounce-animation {
+  animation-fill-mode: forwards;
+  animation: bounce 2s forwards;
+  animation-delay: 0.8s;
+}
+
+.arrow-line-animation {
+  animation: draw 0.8s forwards;
+}
+
+.arrow-head-animation {
+  animation: draw 0.8s forwards;
+  animation-delay:0.6s;
+}
+
+.arrow-markings-animation {
+  animation: draw 0.8s forwards;
+  animation-delay:0.6s;
+}
+
+/* create animation */
+
+.roller-roller-animation {
+  animation-fill-mode: forward;
+  animation: changemulti 4s forwards;
+}
+.roll-animation {
+  animation-fill-mode: forward;
+  animation: roll 4s forwards;
+/*animation-delay: 0.8s;*/
 }
 
 
-.svg-2, .svg-3 {
-  display:inline-block;
-  vertical-align: center;
-  position: relative;
-  height: 1.2em;
-  width: 1.2em;
-  margin-bottom: 20px;
+ /* keyframe animations */
+@keyframes slideLeft {
+  to {
+    transform: translateX(1%);
+  }
 }
 
 @keyframes draw {
   to {
     stroke-dashoffset: 0;
   }
+
 }
-  .container {
-    padding-top: 60px;
-    text-align: center;
-  }
 
-  .first-row {
-      margin-top: 80px;
+@keyframes bounce {
+  20% {transform: translateY(-30px);}
+  60% {transform: translateY(-15px)}
+  100% {transform: translateY(-50px)
   }
-
-  .main-title-first-row {
-      height: 300px;
-  }
-  .main-title-second-row {
-      height: 200px;
-  }
-
-  @media only screen and (max-width: 692px) {
-    .main-title-first-row {
-      height: 200px;
-  }
-    .main-title-second-row {
-      height: 200px;
-  }
-  }
-
-.main-title {
-  font-family: 'Noto Sans KR', sans-serif;
-  color: #33322E ;
-  font-weight: bold;
-  font-size: 60px;
 }
+
+@keyframes changegreen {
+  100% {
+    color: #A7DBB6;
+  }
+}
+@keyframes changeblue {
+  100% {
+    color: #A69C86 ;
+  }
+}
+@keyframes  changeyellow{
+100% {
+    color: #86A2A6;
+}
+}
+
+
+@keyframes changemulti {
+  0% {
+    fill: #A7DBB6;
+    stroke:#A7DBB6;
+  }
+  85%
+  {
+fill: #86A2A6;
+stroke: #86A2A6;
+}
+95%, 100% {
+    fill: #A69C86;
+    stroke: #A69C86;
+  }
+}
+
+@keyframes roll {
+  25% {transform: translateY(-60px) translateX(50px);}
+  50% {transform: translateY(0px) translateX(100px)}
+  75% {transform: translateY(-60px) translateX(150px)}
+  100% {transform: translateY(10px) translateX(200px)}
+  }
 
