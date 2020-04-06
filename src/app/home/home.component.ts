@@ -1,20 +1,25 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
-import { ThrowStmt } from '@angular/compiler';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
+
 export class HomeComponent {
-  @ViewChild('bracket1', { static: false }) bracket1: ElementRef;
-  @ViewChild('bracket2', { static: false }) bracket2: ElementRef;
-  @ViewChild('line', { static: false }) line: ElementRef;
+  // TODO - get rid of local state and create layout store
+  public drawings = {
+    'develop': false,
+    'design': false,
+    'improve': false,
+    'create': false,
+  };
 
-
-  onMouseEnterDevelop() {
-    this.bracket1.nativeElement.classList.add('bracket1-animation');
-    this.bracket2.nativeElement.classList.add('bracket2-animation');
-    this.line.nativeElement.classList.add('line-animation');
+  // trigger respective animations on mouse enter - check if key has value, check value is false (intial state),
+  // then return true so NgClass applies animation classes
+  onMouseEnter(key) {
+    if (this.drawings.hasOwnProperty(key) && this.drawings[`${key}`] === false) {
+      return this.drawings[`${key}`] = true;
+    }
   }
 }

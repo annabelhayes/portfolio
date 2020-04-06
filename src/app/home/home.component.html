@@ -5,15 +5,15 @@
     <div class="col-12 col-md-6 main-title-first-row">
     <h1><span class="main-title">design</span></h1>
      </div>
-      <div #developWrapper (mouseenter)="onMouseEnterDevelop()" class="col-12 col-md-6 main-title-first-row">
+      <div #developWrapper (mouseenter)="onMouseEnter('develop')" class="col-12 col-md-6 main-title-first-row">
         <h1>
           <svg class="svg-2" viewBox="0 0 567 595.35" fill-rule="evenodd" clip-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
-            <path #bracket1 stroke="#000" stroke-width="10.38" d="M472.405 77.965L128.215 301.26l362.128 235.459" fill="none" stroke-linecap="butt" vectornator:layerName="Layer 1"/>
+            <path [ngClass]="{'bracket1-animation': drawings['develop'] === true }" #bracket1 stroke="#000" stroke-width="10.38" d="M472.405 77.965L128.215 301.26l362.128 235.459" fill="none" stroke-linecap="butt" vectornator:layerName="Layer 1"/>
           </svg>
           <span class="main-title">develop</span>
           <svg class="svg-3" viewBox="0 0 609.525 595.35" fill-rule="evenodd" clip-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
-            <path #line stroke="#000" stroke-width="10.38" d="M179.462 35.35L7.35 565.54" fill="none" stroke-linecap="butt" vectornator:layerName="Layer 2"/>
-            <path #bracket2 id="bracket2" stroke="#000" stroke-width="10.38" d="M224.207 548.834l360.371-233.399L222.45 79.975" fill="none" stroke-linecap="butt" vectornator:layerName="Layer 3"/>
+            <path [ngClass]="{'line-animation': drawings['develop'] === true }" #line stroke="#000" stroke-width="10.38" d="M179.462 35.35L7.35 565.54" fill="none" stroke-linecap="butt" vectornator:layerName="Layer 2"/>
+            <path [ngClass]="{'bracket2-animation': drawings['develop'] === true }" #bracket2 id="bracket2" stroke="#000" stroke-width="10.38" d="M224.207 548.834l360.371-233.399L222.45 79.975" fill="none" stroke-linecap="butt" vectornator:layerName="Layer 3"/>
           </svg>
         </h1>
      </div>
