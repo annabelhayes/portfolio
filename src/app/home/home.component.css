@@ -1,4 +1,7 @@
 /* general styling */
+.navbar {
+  color: #F2EBDC !important
+}
 .container {
   padding-top: 60px;
   text-align: center;
@@ -35,8 +38,51 @@ font-size: 60px;
   display: none !important;
   }
 
-/* develop svg styling */
 
+/* svg draw keyframe */
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+
+}
+
+
+/* DESIGN
+design styling */
+#innertitle {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: bold;
+  font-size: 60px;
+  color:#86A2A6 !important;
+}
+
+.text-dynamic, .dynamic-wrapper {
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index: 2;
+    transition: all ease 2s;
+}
+
+/* design animation */
+.design-animation {
+  animation-delay: 0s;
+  animation: 3s slideLeft;
+  animation-fill-mode: forwards;
+}
+ /* keyframe animations */
+ @keyframes slideLeft {
+  to {
+    transform: translateX(1%);
+  }
+}
+
+
+/* DEVELOP */
+/* develop svg styling */
 .svg-2, .svg-3 {
   display:inline-block;
   vertical-align: center;
@@ -57,26 +103,22 @@ font-size: 60px;
   stroke-dasharray: 861;
   stroke-dashoffset: 861;
 }
-
-/* design styling */
-#innertitle {
-  font-family: 'Noto Sans KR', sans-serif;
-  font-weight: bold;
-  font-size: 60px;
-  color:#86A2A6 !important;
+/*develop animation */
+.line-animation {
+animation: draw 0.5s forwards;
+animation-delay:1.2s;
+}
+.bracket1-animation {
+  animation: draw 1.5s forwards;
+}
+.bracket2-animation {
+animation: draw 1.5s forwards;
+animation-delay:1.5s;
 }
 
-.text-dynamic, .dynamic-wrapper {
-    position: absolute;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-    z-index: 2;
-    transition: all ease 2s;
-}
 
-/* improve svg styling */
+/* IMPROVE
+improve svg styling */
 .svg-arrow {
   position: absolute;
   height: 4em;
@@ -93,69 +135,6 @@ font-size: 60px;
 }
 .svg-container {
 	position: relative;
-}
-
-/* create svg and text styling */
-.roller {
-  display: none !important;
-}
-
-
-.svg-roller-container {
-	position: relative;
-}
-
-.svg-roller {
-  z-index:1000;
-  position: absolute;
-  height: 1.5em;
-  width: 1.5em;
-  margin-left: -140px;
-  top: 80%;
-  margin-top: 0px;
-
-}
-
-.create-text {
-    position:relative;
-}
-
-
- .cr-animation {
-    animation:changegreen 1.5s forwards;
-    animation-delay: 0.4s;
-}
-
- .ea-animation {
-    animation:changeyellow 1s forwards;
-    animation-delay: 2s;
- }
-
- .te-animation {
-    animation:changeblue 1s forwards;
-     animation-delay: 3s;
-}
-
-
-/* ANIMATIONS */
-/* design animation */
-.design-animation {
-  animation-delay: 0s;
-  animation: 3s slideLeft;
-  animation-fill-mode: forwards;
-}
-
-/* develop animation */
-.line-animation {
-animation: draw 0.5s forwards;
-animation-delay:1.2s;
-}
-.bracket1-animation {
-  animation: draw 1.5s forwards;
-}
-.bracket2-animation {
-animation: draw 1.5s forwards;
-animation-delay:1.5s;
 }
 
 /* improve animation */
@@ -179,8 +158,56 @@ animation-delay:1.5s;
   animation-delay:0.6s;
 }
 
-/* create animation */
+/* improve keyframes */
+@keyframes bounce {
+  20% {transform: translateY(-30px);}
+  60% {transform: translateY(-15px)}
+  100% {transform: translateY(-50px)
+  }
+}
 
+
+/* CREATE
+ svg and text styling */
+ .roller {
+  display: none !important;
+}
+
+.svg-roller-container {
+	position: relative;
+}
+
+.svg-roller {
+  z-index:1000;
+  position: absolute;
+  height: 1.5em;
+  width: 1.5em;
+  margin-left: -140px;
+  top: 80%;
+  margin-top: 0px;
+
+}
+
+.create-text {
+    position:relative;
+}
+
+ .cr-animation {
+    animation:changegreen 1.5s forwards;
+    animation-delay: 0.4s;
+}
+
+ .ea-animation {
+    animation:changeyellow 1s forwards;
+    animation-delay: 2s;
+ }
+
+ .te-animation {
+    animation:changeblue 1s forwards;
+     animation-delay: 3s;
+}
+
+/* create animation */
 .roller-roller-animation {
   animation-fill-mode: forward;
   animation: changemulti 4s forwards;
@@ -190,29 +217,7 @@ animation-delay:1.5s;
   animation: roll 4s forwards;
 /*animation-delay: 0.8s;*/
 }
-
-
- /* keyframe animations */
-@keyframes slideLeft {
-  to {
-    transform: translateX(1%);
-  }
-}
-
-@keyframes draw {
-  to {
-    stroke-dashoffset: 0;
-  }
-
-}
-
-@keyframes bounce {
-  20% {transform: translateY(-30px);}
-  60% {transform: translateY(-15px)}
-  100% {transform: translateY(-50px)
-  }
-}
-
+/* create keyframes */
 @keyframes changegreen {
   100% {
     color: #A7DBB6;
@@ -226,9 +231,8 @@ animation-delay:1.5s;
 @keyframes  changeyellow{
 100% {
     color: #86A2A6;
+  }
 }
-}
-
 
 @keyframes changemulti {
   0% {
@@ -251,5 +255,5 @@ stroke: #86A2A6;
   50% {transform: translateY(0px) translateX(100px)}
   75% {transform: translateY(-60px) translateX(150px)}
   100% {transform: translateY(10px) translateX(200px)}
-  }
+}
 
