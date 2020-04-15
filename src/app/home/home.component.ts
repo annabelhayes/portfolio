@@ -1,25 +1,32 @@
-import { Component } from '@angular/core';
-
+import { Component, OnInit } from '@angular/core';
+import { Store, select, ActionsSubject } from '@ngrx/store';
+import { AppState } from '../app.reducer';
+import { getLayoutVals } from '../app.selectors';
+import { map, shareReplay } from 'rxjs/internal/operators';
+import * as actions from '../layout.actions';
+import { connectableObservableDescriptor } from 'rxjs/internal/observable/ConnectableObservable';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
 
-export class HomeComponent {
-  // TODO - get rid of local state and create layout store
-  public drawings = {
-    'develop': false,
-    'design': false,
-    'improve': false,
-    'create': false,
-  };
+export class HomeComponent implements OnInit {
+  constructor(private store: Store<AppState>) { }
+  layoutVal$: any;
 
-  // trigger respective animations on mouse enter - check if key has value, check value is false (intial state),
-  // then return true so NgClass applies animation classes
   onMouseEnter(key) {
-    if (this.drawings.hasOwnProperty(key) && this.drawings[`${key}`] === false) {
-      return this.drawings[`${key}`] = true;
-    }
+    this.OnHover(key);
+  }
+  OnHover(key) {
+    this.store.dispatch(new actions.HoverAction(key, 'active'));
+  }
+  ngOnInit() {
+    /* Map state to props */
+    this.layoutVal$ = this.store.pipe(
+      select(getLayoutVals),
+    );
   }
 }
+
+

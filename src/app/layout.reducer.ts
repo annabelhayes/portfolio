@@ -1,19 +1,26 @@
 import * as layout from './layout.actions';
 
-
 export interface LayoutState {
-  animate: string;
+  animationStates: {
+    develop: string,
+    design: string,
+    improve: string,
+    create: string
+  };
   /*
    The description of the different parts of the layout go here
   */
 }
-
 /*
   The initial values of the layout state will be initialized here
  */
-
 const initialState: LayoutState = {
-  animate: 'hello'
+  animationStates: {
+    develop: null,
+    design: null,
+    improve: null,
+    create: null
+  },
 };
 
 /*
@@ -25,12 +32,15 @@ export function reducer(
   action: layout.Actions
 ): LayoutState {
   switch (action.type) {
-    // case layout.HOVER: {
-    //   const heading = action.payload;
-    //   return Object.assign({}, state, {
-    //     animate: heading
-    //   });
-    // }
+    case layout.HOVER: {
+      return Object.assign({}, state, {
+        animationStates:
+        {
+          ...state.animationStates,
+          [action.payload.key]: action.payload.value
+        }
+      });
+    }
     default:
       return state;
   }

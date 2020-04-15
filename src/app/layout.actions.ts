@@ -14,11 +14,13 @@ export const HOVER = 'app/layout/HOVER';
  * See Discriminated Unions: https://www.typescriptlang.org/docs/handbook/advanced-types.html#discriminated-unions
  */
 
-
 export class HoverAction implements Action {
   readonly type = HOVER;
+  public payload: any;
 
-  constructor(public payload: string) { }
+  constructor(key: string, value: string) {
+    this.payload = { key, value };
+  }
 }
 
 /**
