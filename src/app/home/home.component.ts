@@ -15,8 +15,13 @@ export class HomeComponent implements OnInit {
   constructor(private store: Store<AppState>) { }
   layoutVal$: any;
 
+  // only dispatch hover action for first mouseenter event
   onMouseEnter(key) {
-    this.OnHover(key);
+    this.layoutVal$.subscribe(val => {
+      if (val[key] !== 'active') {
+        this.OnHover(key);
+      }
+    });
   }
   OnHover(key) {
     this.store.dispatch(new actions.HoverAction(key, 'active'));
