@@ -4,7 +4,7 @@ import { Action } from '@ngrx/store';
  Layout actions are defined here
  */
 
-export const HOVER = 'app/layout/HOVER';
+export const HEADING = 'app/layout/HEADING';
 
 /**
  * Every action is comprised of at least a type and an optional
@@ -14,8 +14,8 @@ export const HOVER = 'app/layout/HOVER';
  * See Discriminated Unions: https://www.typescriptlang.org/docs/handbook/advanced-types.html#discriminated-unions
  */
 
-export class HoverAction implements Action {
-  readonly type = HOVER;
+export class HeadingAction implements Action {
+  readonly type = HEADING;
   public payload: any;
 
   constructor(key: string, value: string) {
@@ -28,5 +28,5 @@ export class HoverAction implements Action {
  * so that reducers can easily compose action types
  */
 export type Actions =
-  | HoverAction;
+  | HeadingAction;
 

@@ -1,10 +1,11 @@
-import { Component, OnInit } from '@angular/core';
-import { Store, select, ActionsSubject } from '@ngrx/store';
+import { Component, OnInit, HostListener } from '@angular/core';
+import { Store, select } from '@ngrx/store';
 import { AppState } from '../app.reducer';
 import { getLayoutVals } from '../app.selectors';
-import { map, shareReplay } from 'rxjs/internal/operators';
+import { takeWhile } from 'rxjs/internal/operators';
 import * as actions from '../layout.actions';
-import { connectableObservableDescriptor } from 'rxjs/internal/observable/ConnectableObservable';
+import { Router } from '@angular/router';
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -12,20 +13,39 @@ import { connectableObservableDescriptor } from 'rxjs/internal/observable/Connec
 })
 
 export class HomeComponent implements OnInit {
-  constructor(private store: Store<AppState>) { }
+  constructor(private store: Store<AppState>, public router: Router) { }
   layoutVal$: any;
 
   // only dispatch hover action for first mouseenter event
   onMouseEnter(key) {
     this.layoutVal$.subscribe(val => {
-      if (val[key] !== 'active') {
-        this.OnHover(key);
+      if (val[key] === 'init') {
+        this.store.dispatch(new actions.HeadingAction(key, 'active'));
       }
     });
   }
-  OnHover(key) {
-    this.store.dispatch(new actions.HoverAction(key, 'active'));
+  onAnimationEnd(key) {
+    this.store.dispatch(new actions.HeadingAction(key, 'complete'));
   }
+
+  showAnimation(key) {
+    if (key === 'complete' || key === 'active') {
+      return true;
+    }
+  }
+
+  // wait for animation to complete before navigating to route...
+  onClick(key: string, position: number) {
+    this.layoutVal$.pipe(
+      takeWhile(val => val[key] !== 'complete', true),
+    )
+      .subscribe(val => {
+        if (val[key] === 'complete') {
+          this.router.navigate([Object.keys(val)[position]]);
+        }
+      });
+  }
+
   ngOnInit() {
     /* Map state to props */
     this.layoutVal$ = this.store.pipe(

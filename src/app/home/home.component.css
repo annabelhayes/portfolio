@@ -1,4 +1,6 @@
 /* general styling */
+a:hover { text-decoration: none}
+
 .navbar {
   color: #F2EBDC !important
 }

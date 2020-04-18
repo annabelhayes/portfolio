@@ -16,10 +16,10 @@ export interface LayoutState {
  */
 const initialState: LayoutState = {
   animationStates: {
-    develop: null,
-    design: null,
-    improve: null,
-    create: null
+    develop: 'init',
+    design: 'init',
+    improve: 'init',
+    create: 'init'
   },
 };
 
@@ -32,7 +32,7 @@ export function reducer(
   action: layout.Actions
 ): LayoutState {
   switch (action.type) {
-    case layout.HOVER: {
+    case layout.HEADING: {
       return Object.assign({}, state, {
         animationStates:
         {
