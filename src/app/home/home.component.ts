@@ -1,28 +1,31 @@
-import { Component, OnInit, HostListener } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Store, select } from '@ngrx/store';
 import { AppState } from '../app.reducer';
 import { getLayoutVals } from '../app.selectors';
 import { takeWhile } from 'rxjs/internal/operators';
 import * as actions from '../layout.actions';
-import { Router } from '@angular/router';
+import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrls: ['./home.component.css'],
+  animations: []
 })
 
 export class HomeComponent implements OnInit {
   constructor(private store: Store<AppState>, public router: Router) { }
   layoutVal$: any;
 
-  // only dispatch hover action for first mouseenter event
   onMouseEnter(key) {
-    this.layoutVal$.subscribe(val => {
-      if (val[key] === 'init') {
-        this.store.dispatch(new actions.HeadingAction(key, 'active'));
-      }
-    });
+    this.layoutVal$.pipe(
+      takeWhile(val => val[key] !== 'init', true),
+    )
+      .subscribe(val => {
+        if (val[key] === 'init') {
+          this.store.dispatch(new actions.HeadingAction(key, 'active'));
+        }
+      });
   }
   onAnimationEnd(key) {
     this.store.dispatch(new actions.HeadingAction(key, 'complete'));
@@ -46,12 +49,16 @@ export class HomeComponent implements OnInit {
       });
   }
 
+
   ngOnInit() {
     /* Map state to props */
     this.layoutVal$ = this.store.pipe(
       select(getLayoutVals),
     );
+    this.router.events.subscribe(evt => {
+      if (evt instanceof NavigationEnd) {
+        this.store.dispatch(new actions.ResetStateAction);
+      }
+    });
   }
 }
-
-

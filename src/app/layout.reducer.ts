@@ -41,6 +41,10 @@ export function reducer(
         }
       });
     }
+    case layout.RESET: {
+      return { ...initialState };
+    }
+
     default:
       return state;
   }

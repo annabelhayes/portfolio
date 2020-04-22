@@ -5,6 +5,7 @@ import { Action } from '@ngrx/store';
  */
 
 export const HEADING = 'app/layout/HEADING';
+export const RESET = 'app/layout/RESET';
 
 /**
  * Every action is comprised of at least a type and an optional
@@ -23,10 +24,19 @@ export class HeadingAction implements Action {
   }
 }
 
+export class ResetStateAction implements Action {
+  readonly type = RESET;
+  public payload: any;
+
+  constructor() {
+  }
+}
+
 /**
  * Export a type alias of all actions in this action group
  * so that reducers can easily compose action types
  */
 export type Actions =
-  | HeadingAction;
+  | HeadingAction
+  | ResetStateAction;
 
