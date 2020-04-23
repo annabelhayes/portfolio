@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
@@ -17,27 +18,33 @@ import { DevelopComponent } from './develop/develop.component';
 const appRoutes: Routes = [
   {
     path: '',
-    component: HomeComponent
+    component: HomeComponent,
+    data: { animation: 'Home' }
   },
   {
     path: 'home',
-    component: HomeComponent
+    component: HomeComponent,
+    data: { animation: 'Home' }
   },
   {
     path: 'design',
-    component: DesignComponent
+    component: DesignComponent,
+    data: { animation: 'Detail' }
   },
   {
     path: 'develop',
-    component: DevelopComponent
+    component: DevelopComponent,
+    data: { animation: 'Detail' }
   },
   {
     path: 'improve',
-    component: ImproveComponent
+    component: ImproveComponent,
+    data: { animation: 'Detail' }
   },
   {
     path: 'create',
-    component: CreateComponent
+    component: CreateComponent,
+    data: { animation: 'Detail' }
   }
 ];
 @NgModule({
@@ -46,6 +53,7 @@ const appRoutes: Routes = [
     StoreModule.forRoot(reducers, { metaReducers }),
     StoreDevtoolsModule.instrument({ maxAge: 50 }),
     BrowserModule,
+    BrowserAnimationsModule
   ],
   exports: [RouterModule],
   declarations: [
