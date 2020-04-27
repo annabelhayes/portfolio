@@ -11,7 +11,7 @@ import {
 export const fadeAnimation = trigger('routeAnimations',
   [
     // The '* => *' will trigger the animation to change between any two states
-    transition('Home <=> Detail, Detail <=> Detail', [
+    transition('* => *', [
       query(':enter', [style({ opacity: 0 })], { optional: true }),
       query(
         ':leave',

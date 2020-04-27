@@ -29,22 +29,22 @@ const appRoutes: Routes = [
   {
     path: 'design',
     component: DesignComponent,
-    data: { animation: 'Detail' }
+    data: { animation: 'Design' }
   },
   {
     path: 'develop',
     component: DevelopComponent,
-    data: { animation: 'Detail' }
+    data: { animation: 'Develop' }
   },
   {
     path: 'improve',
     component: ImproveComponent,
-    data: { animation: 'Detail' }
+    data: { animation: 'Improve' }
   },
   {
     path: 'create',
     component: CreateComponent,
-    data: { animation: 'Detail' }
+    data: { animation: 'Create' }
   }
 ];
 @NgModule({

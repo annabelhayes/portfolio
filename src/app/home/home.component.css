@@ -1,9 +1,6 @@
 /* general styling */
 a:hover { text-decoration: none}
 
-.navbar {
-  color: #F2EBDC !important
-}
 .container {
   padding-top: 60px;
   text-align: center;
