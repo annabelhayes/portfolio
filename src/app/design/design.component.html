@@ -1,1 +1,61 @@
-<h1>HELLOOOOOO</h1>
+<div class="container">
+  <app-nav></app-nav>
+  <div class="row flex-row justify-content-between mt-2">
+    <div class="col-10">
+      <img class="img-fluid" src="../../assets/design-header-3.png">
+    </div>
+    <div class="col-2 align-self-start text-left mt-2">
+    It's no secret that whether, good, bad, ugly or breathtaking, design is <i>everywhere.</i>
+    <br>
+    <br>
+    I'm fascinated by the endless applications of design; the chance to shape little corners of the world fills me with excitement.
+    <br>
+    <br>
+     It's my belief that despite the nuances of every field, our goal as designers remains to not only understand users needs, but to anticipate them, and elegantly and beautifully meet them.
+      <br>
+       <br>
+       <a (click)="scrollToElement(cards)" class="h5 pointer"><u>check out my work </u><small><i class="fa fa-arrow-down"></i></small>
+       </a>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div data-aos="fade-left" class="row flex-row justify-content-between mt-5 mb-2">
+    <div class="card col-4">
+      <div class="card-body">
+      <div class="text-center">
+        <h5 class="card-title mt-2 mb-1">ICE & Stage</h5>
+        <span class="badge badge-ui mr-1">UI & UX Design</span>
+        <span class="badge badge-secondary">Frontend</span><br>
+        <small class="dark"><b>07/17 - 04/19</b></small>
+        <p class="card-text mt-1">Designing and developing a Master Data Management system to enable the music societies STIM, GEMA and PRS to collect and store audiovisual data.
+        </p>
+        <a href="#" class="dark small">more<i class="fa fa-chevron-down"></i></a>
+      </div>
+    </div></div>
+    <div class="card col-4">
+      <div class="card-body text-center">
+        <h5 class="card-title mt-2 mb-1">DotGO</h5>
+        <span class="badge badge-web mr-1">Web Design</span>
+        <span class="badge badge-secondary mr-1">Sales</span><br>
+        <span class="badge badge-secondary mr-1">Copywriting</span><br>
+        <small class="dark"><b>07/16-09/16; 10/19-01/20</b></small>
+        <p class="card-text mt-1">Selling, designing and implementing custom-built websites for small businesses throughout the UK.
+        </p>
+        <a href="#" class="dark small">more<i class="fa fa-chevron-down"></i></a>
+      </div>
+    </div>
+    <div class="card col-4">
+      <div class="card-body text-center">
+        <h5 class="card-title mt-2 mb-1">Complements Only</h5>
+        <span class="badge badge-graphic mr-1">Graphic Design</span>
+        <span class="badge badge-web">Web Design</span><br>
+        <small class="dark"><b>07/18 - present</b></small>
+        <p class="card-text mt-1">Creating graphic artwork, developing a brand identity and designing the website for a new clothing brand I recently founded.
+        </p>
+        <a href="#" class="dark small">more<i class="fa fa-chevron-down"></i></a>
+      </div>
+    </div>
+  </div>
+  <div #cards class="mt-2" style="visibility: hidden"></div>
+</div>

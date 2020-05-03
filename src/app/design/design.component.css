@@ -1,0 +1,55 @@
+.pointer {
+  cursor: pointer !important;
+}
+
+.col-4 {
+  max-width: 32% !important
+}
+
+.card-title {
+  color: rgb(20, 20, 20);
+  font-size: 22px;
+  margin-bottom: 0;
+}
+
+.cards {
+  margin-top: 10%
+}
+
+.card {
+  background-color: #F2EBDC !important
+}
+
+.card-body {
+  color: #5C5C5C;
+}
+
+.dark{
+  color: rgb(20, 20, 20);
+}
+
+.orange {
+  max-height: 40px;
+}
+
+.dotgo {
+  height: 40px
+}
+
+.ice {
+  text-align: right;
+  margin-top: 10px;
+}
+.badge-ui {
+  color: #F2EBDC ;
+  background-color:  #D95555;
+}
+.badge-web {
+  color: #F2EBDC ;
+  background-color:  #699EBF;
+}
+
+.badge-graphic {
+  color: #F2EBDC ;
+  background-color:  #F2B90C;
+}
