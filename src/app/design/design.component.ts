@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-design',
   templateUrl: './design.component.html',
@@ -8,6 +9,8 @@ import 'aos/dist/aos.css';
 })
 
 export class DesignComponent implements OnInit {
+  constructor(public router: Router) { }
+
   moreClicked = false;
 
   ngOnInit() {
@@ -17,5 +20,12 @@ export class DesignComponent implements OnInit {
   scrollToElement($element): void {
     $element.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
   }
+
+
+  // wait for animation to complete before navigating to route...
+  onClick(key: string) {
+    this.router.navigate([key]);
+  }
 }
+
 

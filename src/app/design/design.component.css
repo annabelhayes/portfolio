@@ -2,6 +2,7 @@ h1 {
   font-size: 58px;
   font-family: 'Noto Sans KR', sans-serif;
 }
+
 .ui {
   /* color:  #D95555; */
   color: #699EBF
@@ -54,11 +55,11 @@ h1 {
 
 }
 .card-web {
-  background-color:rgb(209, 243, 226);
+  background-color:rgb(220, 247, 233);
   opacity: 0.9;
 }
 .card-graphic {
-  background-color:  rgb(247, 237, 193);
+  background-color:  rgb(255, 252, 240);
   opacity: 0.9;
 }
 .card-body {
@@ -122,6 +123,11 @@ h1 {
   background-color: rgb(226, 239, 241);
 }
 
+.panel-green {
+   /* background-color: #DFEFDB;  */
+  background-color: rgb(232, 247, 232)
+}
+
 .full-height {
   height: 100vh;
 }
@@ -132,4 +138,23 @@ h1 {
 
 .reflections-ui-card {
   border-color: #699EBF;
+}
+.reflections-web-card {
+   border-color: rgb(105, 191, 151);
+  ;
+}
+
+.card-dotgo2 {
+  background-color:rgb(247, 255, 251);
+  opacity: 0.9;
+}
+
+.icon-card {
+  background-color:  rgb(255, 251, 240);
+  border-color: rgb(105, 191, 151);
+}
+
+.panel-yellow {
+  background-color:  rgb(255, 251, 240);
+
 }

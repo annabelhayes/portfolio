@@ -25,7 +25,7 @@
       <div class="col-4 align-self-center">
         <img class="img-fluid"
           src="assets/images/mac.png">
-          <small class="light"><i>Sketch from patent filed by Apple Computer Inc 1998-05-06.</i></small>
+        <small class="light"><i>Sketch from patent filed by Apple Computer Inc 1998-05-06.</i></small>
       </div>
     </div>
     <div class="row flex-row justify-content-between pb-4">
@@ -44,19 +44,6 @@
           </div>
         </div>
       </div>
-      <div class="card card-web col-4">
-        <div class="card-body text-center">
-          <h5 class="card-title mt-2 mb-1">DotGO</h5>
-          <span class="badge badge-web mr-1">Web Design</span>
-          <span class="badge badge-secondary mr-1">Sales</span><br>
-          <span class="badge badge-secondary mr-1">Copywriting</span><br>
-          <small class="dark"><b>07/16-09/16; 10/19-01/20</b></small>
-          <p class="card-text mt-1">Selling, designing and implementing custom-built websites for small businesses
-            throughout the UK.
-          </p>
-          <a class="dark small">more<i class="fa fa-chevron-down"></i></a>
-        </div>
-      </div>
       <div class="card card-graphic col-4">
         <div class="card-body text-center">
           <h5 class="card-title mt-2 mb-1">Complements Only</h5>
@@ -67,8 +54,22 @@
             a
             new clothing brand I recently founded.
           </p>
-          <a href="#"
-            class="dark small">more<i class="fa fa-chevron-down"></i></a>
+          <a class="dark small pointer"
+            (click)="scrollToElement(graphic)">more<i class="fa fa-chevron-down"></i></a>
+        </div>
+      </div>
+      <div class="card card-web col-4">
+        <div class="card-body text-center">
+          <h5 class="card-title mt-2 mb-1">DotGO</h5>
+          <span class="badge badge-web mr-1">Web Design</span>
+          <span class="badge badge-secondary mr-1">Sales</span><br>
+          <span class="badge badge-secondary mr-1">Copywriting</span><br>
+          <small class="dark"><b>07/16-09/16; 10/19-01/20</b></small>
+          <p class="card-text mt-1">Selling, designing and implementing custom-built websites for small businesses
+            throughout the UK.
+          </p>
+          <a (click)="scrollToElement(dotgo)"
+            class="dark small pointer">more<i class="fa fa-chevron-down"></i></a>
         </div>
       </div>
     </div>
@@ -245,14 +246,15 @@
         <p>We then developed the components deployed them for testing, taking feedback from users. We identified
           bugs that needed to be fixed, as well as enhancements that should be carried out.<br><br></p>
       </div>
-      <div class="col-6 text-center align-self-start pt-4"><button class="btn-secondary btn-large"> Check Out My
+      <div class="col-6 text-center align-self-start pt-4"><button (click)="onClick('develop')"
+          class="btn-secondary btn-large"> Check Out My
           Development Work <i class="fa fa-arrow-right"></i></button>
       </div>
     </div>
   </div>
 </div>
 <!-- </div> -->
-<div class="panel-light full-height">
+<div class="panel-light">
   <div class="container">
     <div class="row flex-row pt-5 justify-content-center">
       <div class="col-6 card reflections-ui-card mt-5 p-1">
@@ -293,34 +295,72 @@
   </div>
   <div class="row flex-row justify-content-end pt-5">
     <div class="col-3 text-right mr-3">
+      <h6 class="pointer"> <span class="graphic"
+          (click)="scrollToElement(graphic)"> Next Project <i class="fa fa-chevron-down"></i></span> | <span
+          (click)="scrollToElement(top)"> Back to Top <i class="fa fa-chevron-up"></i></span></h6>
+    </div>
+  </div>
+</div>
+<div #graphic
+  class="pt-4">
+  <div class="container">
+    <div class="row flex-row justify-content-between">
+      <div class="col-3"></div>
+      <div class="col-6 align-self-center">
+        <img class="img-fluid"
+          src="assets/images/co.png">
+      </div>
+      <div class="col-3"></div>
+    </div>
+    <div class="row flex-row card mb-2 no-gutters">
+      <div class="col-4 text-center">
+        <b>Role</b><br>
+        Founder, Graphic Designer, Website Designer, anything else you can think of...
+      </div>
+      <div class="col-4 text-center">
+        <b>Team</b><br>
+        Annabel Hayes (solo)
+      </div>
+      <div class="col-4 text-center">
+        <b>Duration</b><br>
+        07/18 onward
+      </div>
+    </div>
+  </div>
+  <div class="row flex-row justify-content-end pt-5">
+    <div class="col-3 text-right mr-3">
       <h6 class="pointer"> <span class="web"
           (click)="scrollToElement(dotgo)"> Next Project <i class="fa fa-chevron-down"></i></span> | <span
           (click)="scrollToElement(top)"> Back to Top <i class="fa fa-chevron-up"></i></span></h6>
     </div>
   </div>
 </div>
-<div #dotgo>
+<div #dotgo
+  class="panel-yellow pt-2">
   <div class="container">
     <div class="row flex-row justify-content-between mt-5">
       <div class="col-6">
-        <h2 class="unsure"><b>DotGo</b></h2>
+        <h2><b>DotGo</b></h2>
         <h4 class="mt-3">Background to DotGo</h4>
         <p>DotGo is a website builder, offering web design services to businesses throughout the UK.
         </p>
         <h4 class="pt-3">My Involvement</h4>
-        <p>I joined DotGo (at the time called Reason8) for a 2 month contract in summer 2016, before I went to university. My role
+        <p>I joined DotGo (at the time called Reason8) for a 2 month contract in summer 2016, before I went to
+          university. My role
           encompassed Sales, Account Management and Web Design. <br><br>
+          I returned to DotGo in 2019 for a 3 month contract as a Content Writer <a class="pointer"><u>(see
+              below)</u></a>.
         </p>
       </div>
-      <div class="col-5 align-self-end">
+      <div class="col-6 align-self-end">
         <img class="img-fluid"
           src="assets/images/design-dotgo-1.png">
       </div>
     </div>
-    <div class="row flex-row card mb-2">
+    <div class="row flex-row card mb-2 no-gutters">
       <div class="col-4 text-center">
         <b>Role</b><br>
-        Sales Representative and Website Designer
+        Sales Rep and Website Designer
       </div>
       <div class="col-4 text-center">
         <b>Team</b><br>
@@ -332,9 +372,232 @@
         07/16 - 09/16
       </div>
     </div>
-    <div class="row flex-row justify-content-between mt-1">
+    <div class="row flex-row justify-content-between mt-2">
       <div class="col-12">
         <h4 class="pt-3">Responsibilities</h4>
-      </div></div>
+      </div>
+    </div>
+    <div class="row flex-row mt-2 mb-2 text-center justify-content-between">
+      <div class="col-4">
+        <div class="row flex-row justify-content-center">
+          <div class="col-6">
+            <span class="h5 web card icon-card p-3">
+              <i class="fa fa-phone fa-2x">
+              </i><br>Sales
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="row flex-row justify-content-center">
+          <div class="col-6">
+            <span class="h5 web card icon-card p-3">
+              <i class="fa fa-sitemap fa-2x">
+              </i><br>Design
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="row flex-row justify-content-center">
+          <div class="col-6">
+            <span class="h5 web card icon-card p-3">
+              <i class="fa fa-edit fa-2x">
+              </i><br>Build
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="row flex-row">
+        <div class="col-4 mt-2">
+          <ul>
+            <p class="dark">
+              <li>I called existing clients and encouraged them to migrate their websites to our new, premium software
+                platform.</li>
+              <li>
+                Success ultimately relied on me relaying to customers why great ui & ux, alongside engaging content, is
+                essential for every type of
+                business.
+              </li>
+            </p>
+          </ul>
+        </div>
+        <div class="col-4 mt-2">
+          <ul>
+            <p class="dark">
+              <li>I carried out interviews to gain an in-depth understanding of each client’s business, what content
+                they would like producing and what their design
+                aspirations were.
+              </li>
+
+            </p>
+          </ul>
+        </div>
+        <div class="col-4 mt-2">
+          <ul>
+            <p class="dark">
+              <li>
+                I used DotGo’s website builder to create clients more professional-looking, SEO-optimised and modern
+                websites.
+              </li>
+              <li> After revealing client’s new websites, I provided any amendments
+                they required.
+              </li>
+            </p>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <h4 class="mt-3">Feedback</h4>
+        <p>I was very proud that for the majority of my clients, any amendments that were required after the site was
+          built were either small or non-existent. I also surpassed my sales targets.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="row flex-row justify-content-end pt-1">
+    <div class="col-3 text-right mr-3">
+      <h6 class="pointer"> <span class="web"
+          (click)="scrollToElement(dotgo2)"> Next Project <i class="fa fa-chevron-down"></i></span> | <span
+          (click)="scrollToElement(top)"> Back to Top <i class="fa fa-chevron-up"></i></span></h6>
+    </div>
+  </div>
+  <div #dotgo2
+    class="panel-green">
+    <div class="container">
+      <div class="row flex-row justify-content-between pt-3">
+        <div class="col-12">
+          <h2 class="unsure"><b>DotGo</b></h2>
+          <h4 class="mt-3">Return to DotGo in 2019</h4>
+          <p>As the company expanded, operations were split into: Sales, Digital Design and Content Writing, with
+            dedicated personnel for each role.
+            I returned to DotGo in 2019 for a 3 month contract as a Content Writer, before spending a few amazing months
+            skiing.
+          </p>
+        </div>
+      </div>
+      <div class="row flex-row card card-dotgo2 mb-2 no-gutters">
+        <div class="col-4 text-center">
+          <b>Role</b><br>
+          Content Writer
+        </div>
+        <div class="col-4 text-center">
+          <b>Team</b><br>
+          Nick Stallard<br>
+          Annabel Hayes
+        </div>
+        <div class="col-4 text-center">
+          <b>Duration</b><br>
+          10/19 - 01/20
+        </div>
+      </div>
+      <div class="row flex-row mb-2 no-gutters">
+        <div class="col-6">
+          <h4 class="mt-3">Role</h4>
+          After reading through client’s and designer’s notes in a shared data area, I called clients’ and carried out a
+          detailed content consultation. I then wrote up their content, aiming for 350-500 words/page and interweaving
+          key
+          primary and secondary SEO phrases throughout.<br><br>
+          <b>Key Requirements</b>
+          <ul>
+            <li>
+              Create a consistent “voice” which runs throughout client's content, which fits their business
+              and would appeal to potential customers.
+            </li>
+            <li>Detailed
+              analysis of what made each client's business unique and how to sell it.</li>
+            <li>
+              Research into competitors to gain ideas about the structure and form of the content.
+            </li>
+          </ul>
+        </div>
+        <div class="col-6">
+          <img class="img-fluid"
+            src="assets/images/content-ex.png">
+        </div>
+      </div>
+      <div class="pb-3">
+        <h4 class="mt-3">Examples</h4>
+        <div class="row flex-row mb-2 mt-1 no-gutters">
+          <div class="col-4 text-left">
+            <a href="https://www.thebellinnanslow.co.uk/"
+              class="pointer dark">
+              <u>The Bell Inn Anslow (Pub)</u>
+              <i class="ml-2 web fa fa-external-link"></i>
+            </a>
+          </div>
+          <div class="col-4 text-center">
+            <a class="pointer"
+              href="https://www.optionz.info/"
+              class="pointer dark">
+              <u>Optionz (Property Investment)</u>
+              <i class="ml-2 web fa fa-external-link"></i>
+            </a>
+          </div>
+          <div class="col-4 text-right">
+            <a href="https://www.olleywastemanagement.co.uk/"
+              class="pointer dark">
+              <u>Olley Waste Management</u>
+              <i class="ml-2 web fa fa-external-link"></i>
+            </a>
+          </div>
+        </div>
+        <small>Please note, I did not design these websites, I just produced the written content. This content may have
+          been altered slightly by clients since - so basically, if you spot anything that doesn’t sound right, please
+          assume it was not me… ;)
+        </small>
+      </div>
+    </div>
+  </div>
+  <div class="panel-light">
+    <div class="container">
+      <div class="row flex-row pt-5 justify-content-center">
+        <div class="col-6 card reflections-web-card mt-3 p-1">
+          <h3 class="web pt-3 text-center"><b>Reflections <i class="fa fa-smile-o"></i></b></h3>
+          <div class="p-3">
+            <span>My experience at ICE and Stage was incredibly rewarding. From working in an entirely new city
+              (Berlin),
+              to
+              tackling difficult design decisions and having to quickly learn new technologies, I was constantly pushed
+              to
+              the edge of my comfort
+              zone and learnt a vast amount in the process.
+            </span>
+          </div>
+          <h4 class="text-left pl-3 web">Key Learnings</h4>
+          <span>
+            <ul>
+              <li>
+                <p><b>Clear Vision</b> - I learnt the importance of establishing a clear, shared vision with each
+                  client, in order to ensure clients were always satisfied with the end result of their websites.</p>
+              </li>
+              <li>
+                <p><b>DotGo System</b> - I had to rapidly come to terms with the DotGo website building system, in order
+                  to build at the appropriate pace. I strongly belive that learning new things efficiently, is a skill
+                  that is enhanced through practise.</p>
+
+              <li>
+                <p><b>Marketing</b> - Especially whilst Content Writing, I took on a Marketing role, writing with
+                  empathy and deploying attention-grabbing phrases to appeal to potential customers.
+                </p>
+              </li>
+              <li>
+                <p><b>SEO</b> - In the Frontend, with key search phrases and in the Backend, by adding meta tags to
+                  images, I became familiar with SEO practises throughout both Dotgo roles.
+                </p>
+              </li>
+            </ul>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="row flex-row justify-content-end pt-1 pb-3">
+      <div class="col-3 text-right mr-3">
+        <h6 class="pointer"> <span class="dark"
+            (click)="scrollToElement(top)"> Back to Top <i class="fa fa-chevron-up"></i></span></h6>
+      </div>
+    </div>
   </div>
 </div>
