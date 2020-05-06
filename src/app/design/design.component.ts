@@ -8,6 +8,7 @@ import 'aos/dist/aos.css';
 })
 
 export class DesignComponent implements OnInit {
+  moreClicked = false;
 
   ngOnInit() {
     AOS.init();
@@ -16,6 +17,5 @@ export class DesignComponent implements OnInit {
   scrollToElement($element): void {
     $element.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
   }
-
 }
 

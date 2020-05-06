@@ -1,5 +1,32 @@
+h1 {
+  font-size: 58px;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+.ui {
+  /* color:  #D95555; */
+  color: #699EBF
+
+}
+.web {
+  /* color: #699EBF */
+  color: rgb(105, 191, 151);
+
+}
+
+.graphic {
+  color:  #F2B90C;
+}
+
+.light{
+  color: #5C5C5C;
+}
 .pointer {
   cursor: pointer !important;
+}
+
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
 }
 
 .col-4 {
@@ -17,9 +44,23 @@
 }
 
 .card {
-  background-color: #F2EBDC !important
+  background-color:rgb(255, 248, 234);
+  border-color:rgb(226, 221, 212) ;
 }
 
+.card-ui {
+  background-color: rgb(230, 246, 253);
+  opacity: 0.9;
+
+}
+.card-web {
+  background-color:rgb(209, 243, 226);
+  opacity: 0.9;
+}
+.card-graphic {
+  background-color:  rgb(247, 237, 193);
+  opacity: 0.9;
+}
 .card-body {
   color: #5C5C5C;
 }
@@ -41,15 +82,54 @@
   margin-top: 10px;
 }
 .badge-ui {
-  color: #F2EBDC ;
-  background-color:  #D95555;
+  color: rgb(255, 248, 234)  ;
+  /* background-color:  #D95555; */
+  background-color: #699EBF;
+
 }
 .badge-web {
-  color: #F2EBDC ;
-  background-color:  #699EBF;
+  color: rgb(255, 248, 234)  ;
+  /* background-color:  #699EBF; */
+  background-color:  rgb(105, 191, 151);
 }
 
 .badge-graphic {
-  color: #F2EBDC ;
+  color: rgb(255, 248, 234) ;
   background-color:  #F2B90C;
+}
+
+.panel-light {
+  background-color: rgb(255, 248, 234) ;
+}
+
+.panel-pink {
+  background-color: #DEE4E1;
+  color:rgb(20, 20, 20);
+}
+.panel-blue {
+  background-color:  rgb(226, 239, 241); ;
+}
+
+.panel-deeper-blue {
+  background-color:#CAD7DD;
+}
+
+.panel-blue-2 {
+  background-color: rgb(217, 232, 235); ;
+}
+
+.panel-blue-3 {
+  background-color: rgb(226, 239, 241);
+}
+
+.full-height {
+  height: 100vh;
+}
+
+.img-prob {
+  max-width: 66.66%;
+}
+
+.reflections-ui-card {
+  border-color: #699EBF;
 }

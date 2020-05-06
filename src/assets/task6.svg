@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1050px" height="400px" viewBox="0 0 1050 400" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46 (44423) - http://www.bohemiancoding.com/sketch -->
+    <title>6</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="79" y="47" width="352" height="282"></rect>
+        <rect id="path-2" x="0" y="2" width="16" height="16" rx="2"></rect>
+        <filter x="-12.5%" y="-12.5%" width="125.0%" height="125.0%" filterUnits="objectBoundingBox" id="filter-3">
+            <feGaussianBlur stdDeviation="1.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <rect id="path-4" x="0" y="2" width="16" height="16" rx="2"></rect>
+        <filter x="-12.5%" y="-12.5%" width="125.0%" height="125.0%" filterUnits="objectBoundingBox" id="filter-5">
+            <feGaussianBlur stdDeviation="1.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <rect id="path-6" x="0" y="1" width="16" height="16" rx="2"></rect>
+        <filter x="-12.5%" y="-12.5%" width="125.0%" height="125.0%" filterUnits="objectBoundingBox" id="filter-7">
+            <feGaussianBlur stdDeviation="1.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <rect id="path-8" x="0" y="2" width="16" height="16" rx="2"></rect>
+        <filter x="-12.5%" y="-12.5%" width="125.0%" height="125.0%" filterUnits="objectBoundingBox" id="filter-9">
+            <feGaussianBlur stdDeviation="1.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <rect id="path-10" x="0" y="2" width="16" height="16" rx="2"></rect>
+        <filter x="-12.5%" y="-12.5%" width="125.0%" height="125.0%" filterUnits="objectBoundingBox" id="filter-11">
+            <feGaussianBlur stdDeviation="1.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <rect id="path-12" x="0" y="2" width="16" height="16" rx="2"></rect>
+        <filter x="-12.5%" y="-12.5%" width="125.0%" height="125.0%" filterUnits="objectBoundingBox" id="filter-13">
+            <feGaussianBlur stdDeviation="1.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <rect id="path-14" x="0" y="2" width="16" height="16" rx="2"></rect>
+        <filter x="-12.5%" y="-12.5%" width="125.0%" height="125.0%" filterUnits="objectBoundingBox" id="filter-15">
+            <feGaussianBlur stdDeviation="1.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <rect id="path-16" x="0" y="2" width="16" height="16" rx="2"></rect>
+        <filter x="-12.5%" y="-12.5%" width="125.0%" height="125.0%" filterUnits="objectBoundingBox" id="filter-17">
+            <feGaussianBlur stdDeviation="1.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <rect id="path-18" x="397" y="84" width="14" height="160"></rect>
+        <rect id="path-19" x="569" y="50" width="352" height="282"></rect>
+        <rect id="path-20" x="0" y="2" width="16" height="16" rx="2"></rect>
+        <filter x="-12.5%" y="-12.5%" width="125.0%" height="125.0%" filterUnits="objectBoundingBox" id="filter-21">
+            <feGaussianBlur stdDeviation="1.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <rect id="path-22" x="0" y="2" width="16" height="16" rx="2"></rect>
+        <filter x="-12.5%" y="-12.5%" width="125.0%" height="125.0%" filterUnits="objectBoundingBox" id="filter-23">
+            <feGaussianBlur stdDeviation="1.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <rect id="path-24" x="0" y="2" width="16" height="16" rx="2"></rect>
+        <filter x="-12.5%" y="-12.5%" width="125.0%" height="125.0%" filterUnits="objectBoundingBox" id="filter-25">
+            <feGaussianBlur stdDeviation="1.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <rect id="path-26" x="887" y="98" width="15" height="80"></rect>
+        <rect id="path-27" x="0" y="2" width="16" height="16" rx="2"></rect>
+        <filter x="-12.5%" y="-12.5%" width="125.0%" height="125.0%" filterUnits="objectBoundingBox" id="filter-28">
+            <feGaussianBlur stdDeviation="1.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <rect id="path-29" x="0" y="2" width="16" height="16" rx="2"></rect>
+        <filter x="-12.5%" y="-12.5%" width="125.0%" height="125.0%" filterUnits="objectBoundingBox" id="filter-30">
+            <feGaussianBlur stdDeviation="1.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <rect id="path-31" x="0" y="2" width="16" height="16" rx="2"></rect>
+        <filter x="-12.5%" y="-12.5%" width="125.0%" height="125.0%" filterUnits="objectBoundingBox" id="filter-32">
+            <feGaussianBlur stdDeviation="1.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Scenario-6:-Possible-Match" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="6">
+            <g id="Rectangle">
+                <use fill="#D8D8D8" fill-rule="evenodd" xlink:href="#path-1"></use>
+                <rect stroke="#979797" stroke-width="1" x="79.5" y="47.5" width="351" height="281"></rect>
+            </g>
+            <g id="cursor" transform="translate(365.000000, 147.000000)" stroke="#4A4A4A">
+                <g id="Group-2" transform="translate(9.500000, 11.500000) rotate(-52.000000) translate(-9.500000, -11.500000) ">
+                    <path d="M9.72727273,10.325 L9.72727273,22.025" id="Line-2" stroke-width="8" stroke-linecap="square"></path>
+                    <polygon id="Triangle-2" fill="#4A4A4A" points="9.52286033 0 18.5048645 16.25 0.540856195 16.25"></polygon>
+                </g>
+            </g>
+            <polygon id="Triangle" stroke="#9B9B9B" fill="#4A90E2" points="404 57 411 71 397 71"></polygon>
+            <polygon id="Triangle" stroke="#9B9B9B" fill="#4A90E2" points="405 317 398 303 412 303"></polygon>
+            <text id="Search-/-Possible-Ma" font-family="Seravek-Light, Seravek" font-size="15" font-weight="300" fill="#4A4A4A">
+                <tspan x="100" y="70">Search            /           </tspan>
+                <tspan x="222.4" y="70" text-decoration="underline"> Possible Matches</tspan>
+            </text>
+            <g id="Group-5" transform="translate(87.000000, 114.000000)" stroke="#000000" stroke-linecap="square">
+                <path d="M0.247524752,1 L99.7524752,1" id="Line"></path>
+                <path d="M0.247524752,21 L70.2970297,21" id="Line"></path>
+                <path d="M0.247524752,41 L70.2970297,41" id="Line"></path>
+            </g>
+            <g id="Group-5" transform="translate(87.000000, 202.000000)" stroke="#000000" stroke-linecap="square">
+                <path d="M0.247524752,1 L99.7524752,1" id="Line"></path>
+                <path d="M0.247524752,21 L70.2970297,21" id="Line"></path>
+                <path d="M0.247524752,41 L70.2970297,41" id="Line"></path>
+            </g>
+            <g id="Group-5" transform="translate(87.000000, 290.000000)" stroke="#000000" stroke-linecap="square">
+                <path d="M0.247524752,1 L99.7524752,1" id="Line"></path>
+                <path d="M0.247524752,21 L70.2970297,21" id="Line"></path>
+            </g>
+            <path d="M220,110 L320,110" id="Line" stroke="#000000" stroke-linecap="square"></path>
+            <path d="M354,151 L446.5,157.5" id="Line" stroke="#4A4A4A" stroke-linecap="square"></path>
+            <path d="M319,98 L448.5,65.5" id="Line" stroke="#4A4A4A" stroke-linecap="square"></path>
+            <path d="M67.5,147.5 L81.5,133.5" id="Line" stroke="#4A4A4A" stroke-linecap="square"></path>
+            <text id="Details-e.g.-Year" font-family="Seravek-Light, Seravek" font-size="15" font-weight="300" fill="#4A4A4A">
+                <tspan x="19" y="159">Details</tspan>
+                <tspan x="19" y="178">e.g.</tspan>
+                <tspan x="19" y="197">Year</tspan>
+            </text>
+            <path d="M220,130 L318,130" id="Line" stroke="#000000" stroke-linecap="square"></path>
+            <path d="M220,150 L318,150" id="Line" stroke="#000000" stroke-linecap="square"></path>
+            <text id="Possible-match" font-family="Seravek-Light, Seravek" font-size="15" font-weight="300" text-decoration="underline" fill="#4A4A4A">
+                <tspan x="87" y="374"> Possible match</tspan>
+            </text>
+            <g id="Checkbox-/-Unchecked" transform="translate(347.000000, 105.000000)">
+                <g id="Check-Background">
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-2"></use>
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                    <rect stroke="#979797" stroke-width="1" x="0.5" y="2.5" width="15" height="15" rx="2"></rect>
+                </g>
+            </g>
+            <g id="Checkbox-/-Unchecked" transform="translate(347.000000, 125.000000)">
+                <g id="Check-Background">
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-4"></use>
+                    <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
+                    <rect stroke="#979797" stroke-width="1" x="0.5" y="2.5" width="15" height="15" rx="2"></rect>
+                </g>
+            </g>
+            <g id="Checkbox-/-Checked" transform="translate(347.000000, 145.000000)">
+                <g id="Check-Background">
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-6"></use>
+                    <use fill="black" fill-opacity="1" filter="url(#filter-7)" xlink:href="#path-6"></use>
+                    <rect stroke="#979797" stroke-width="1" x="0.5" y="1.5" width="15" height="15" rx="2"></rect>
+                </g>
+                <polygon id="Rectangle-34" fill="#4A90E2" fill-rule="evenodd" points="8 13 3 8 5 6 8 9 16 1 18 3"></polygon>
+            </g>
+            <g id="Group-2" transform="translate(234.000000, 194.000000)">
+                <g id="Group" transform="translate(0.000000, 8.000000)" stroke="#000000" stroke-linecap="square">
+                    <path d="M0.247524752,1 L99.7524752,1" id="Line"></path>
+                    <path d="M0.247524752,21 L98.5,21" id="Line"></path>
+                    <path d="M0.247524752,41 L98.5,41" id="Line"></path>
+                </g>
+                <g id="Checkbox-/-Unchecked" transform="translate(113.000000, 0.000000)">
+                    <g id="Check-Background">
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-8"></use>
+                        <use fill="black" fill-opacity="1" filter="url(#filter-9)" xlink:href="#path-8"></use>
+                        <rect stroke="#979797" stroke-width="1" x="0.5" y="2.5" width="15" height="15" rx="2"></rect>
+                    </g>
+                </g>
+                <g id="Checkbox-/-Unchecked" transform="translate(113.000000, 20.000000)">
+                    <g id="Check-Background">
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-10"></use>
+                        <use fill="black" fill-opacity="1" filter="url(#filter-11)" xlink:href="#path-10"></use>
+                        <rect stroke="#979797" stroke-width="1" x="0.5" y="2.5" width="15" height="15" rx="2"></rect>
+                    </g>
+                </g>
+                <g id="Checkbox-/-Unchecked" transform="translate(113.000000, 40.000000)">
+                    <g id="Check-Background">
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-12"></use>
+                        <use fill="black" fill-opacity="1" filter="url(#filter-13)" xlink:href="#path-12"></use>
+                        <rect stroke="#979797" stroke-width="1" x="0.5" y="2.5" width="15" height="15" rx="2"></rect>
+                    </g>
+                </g>
+            </g>
+            <g id="Checkbox-/-Unchecked" transform="translate(347.000000, 280.000000)">
+                <g id="Check-Background">
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-14"></use>
+                    <use fill="black" fill-opacity="1" filter="url(#filter-15)" xlink:href="#path-14"></use>
+                    <rect stroke="#979797" stroke-width="1" x="0.5" y="2.5" width="15" height="15" rx="2"></rect>
+                </g>
+            </g>
+            <g id="Checkbox-/-Unchecked" transform="translate(347.000000, 300.000000)">
+                <g id="Check-Background">
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-16"></use>
+                    <use fill="black" fill-opacity="1" filter="url(#filter-17)" xlink:href="#path-16"></use>
+                    <rect stroke="#979797" stroke-width="1" x="0.5" y="2.5" width="15" height="15" rx="2"></rect>
+                </g>
+            </g>
+            <g id="Group" transform="translate(234.000000, 289.000000)" stroke="#000000" stroke-linecap="square">
+                <path d="M0.247524752,1 L99.7524752,1" id="Line"></path>
+                <path d="M0.247524752,21 L98.5,21" id="Line"></path>
+            </g>
+            <text id="Click-to-link-local" font-family="Seravek-Light, Seravek" font-size="15" font-weight="300" fill="#4A4A4A">
+                <tspan x="452" y="158">Click to link </tspan>
+                <tspan x="452" y="177">local </tspan>
+                <tspan x="452" y="196">production</tspan>
+            </text>
+            <text id="Details-can-be-colla" font-family="Seravek-Light, Seravek" font-size="15" font-weight="300" fill="#4A4A4A">
+                <tspan x="452" y="55">Details can </tspan>
+                <tspan x="452" y="74">be collapsed</tspan>
+            </text>
+            <g id="Rectangle">
+                <use fill="#4A90E2" fill-rule="evenodd" xlink:href="#path-18"></use>
+                <rect stroke="#979797" stroke-width="1" x="397.5" y="84.5" width="13" height="159"></rect>
+            </g>
+            <g id="6.1" transform="translate(59.000000, 22.000000)" font-size="14" font-family="AvenirNext-Regular, Avenir Next" fill="#4A4A4A" font-weight="normal">
+                <text>
+                    <tspan x="0" y="14">6.1</tspan>
+                </text>
+            </g>
+            <g id="6.1" transform="translate(557.000000, 22.000000)" font-size="14" font-family="AvenirNext-Regular, Avenir Next" fill="#4A4A4A" font-weight="normal">
+                <text id="6.2">
+                    <tspan x="0" y="14">6.2</tspan>
+                </text>
+            </g>
+            <g id="Rectangle">
+                <use fill="#D8D8D8" fill-rule="evenodd" xlink:href="#path-19"></use>
+                <rect stroke="#979797" stroke-width="1" x="569.5" y="50.5" width="351" height="281"></rect>
+            </g>
+            <polygon id="Triangle" stroke="#9B9B9B" fill="#4A90E2" points="894 60 901 74 887 74"></polygon>
+            <polygon id="Triangle" stroke="#9B9B9B" fill="#4A90E2" points="895 320 888 306 902 306"></polygon>
+            <g id="Group-5" transform="translate(577.000000, 117.000000)" stroke="#000000" stroke-linecap="square">
+                <path d="M0.247524752,1 L99.7524752,1" id="Line"></path>
+                <path d="M0.247524752,21 L70.2970297,21" id="Line"></path>
+                <path d="M0.247524752,41 L70.2970297,41" id="Line"></path>
+            </g>
+            <g id="Group-5" transform="translate(579.000000, 278.000000)" stroke="#000000" stroke-linecap="square">
+                <path d="M0.247524752,1 L99.7524752,1" id="Line"></path>
+                <path d="M0.247524752,21 L70.2970297,21" id="Line"></path>
+                <path d="M0.247524752,41 L70.2970297,41" id="Line"></path>
+            </g>
+            <g id="Group" transform="translate(711.000000, 113.000000)" stroke="#000000" stroke-linecap="square">
+                <path d="M0.247524752,1 L99.7524752,1" id="Line"></path>
+                <path d="M0,16 L78.5,16" id="Line"></path>
+                <path d="M0,31 L78.5,31" id="Line"></path>
+                <path d="M0,47 L78.5,47" id="Line"></path>
+                <path d="M0,62 L78.5,62" id="Line"></path>
+                <path d="M0,77 L71.5,77" id="Line"></path>
+            </g>
+            <g id="Group" transform="translate(711.000000, 217.000000)" stroke="#000000" stroke-linecap="square">
+                <path d="M0.247524752,1 L99.7524752,1" id="Line"></path>
+                <path d="M0.247524752,21 L98.5,21" id="Line"></path>
+            </g>
+            <text id="Collapsed-detail-vie" font-family="Seravek-Light, Seravek" font-size="15" font-weight="300" text-decoration="underline" fill="#4A4A4A">
+                <tspan x="577" y="377">Collapsed detail view</tspan>
+            </text>
+            <g id="Checkbox-/-Unchecked" transform="translate(837.000000, 108.000000)">
+                <g id="Check-Background">
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-20"></use>
+                    <use fill="black" fill-opacity="1" filter="url(#filter-21)" xlink:href="#path-20"></use>
+                    <rect stroke="#979797" stroke-width="1" x="0.5" y="2.5" width="15" height="15" rx="2"></rect>
+                </g>
+            </g>
+            <g id="Checkbox-/-Unchecked" transform="translate(837.000000, 208.000000)">
+                <g id="Check-Background">
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-22"></use>
+                    <use fill="black" fill-opacity="1" filter="url(#filter-23)" xlink:href="#path-22"></use>
+                    <rect stroke="#979797" stroke-width="1" x="0.5" y="2.5" width="15" height="15" rx="2"></rect>
+                </g>
+            </g>
+            <g id="Checkbox-/-Unchecked" transform="translate(837.000000, 228.000000)">
+                <g id="Check-Background">
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-24"></use>
+                    <use fill="black" fill-opacity="1" filter="url(#filter-25)" xlink:href="#path-24"></use>
+                    <rect stroke="#979797" stroke-width="1" x="0.5" y="2.5" width="15" height="15" rx="2"></rect>
+                </g>
+            </g>
+            <text id="Details-collapsed" font-family="Seravek-Light, Seravek" font-size="15" font-weight="300" fill="#4A4A4A">
+                <tspan x="942" y="141">Details </tspan>
+                <tspan x="942" y="160">collapsed</tspan>
+            </text>
+            <text id="Search-/-Possible-Ma" font-family="Seravek-Light, Seravek" font-size="15" font-weight="300" fill="#4A4A4A">
+                <tspan x="579" y="71">Search            /           </tspan>
+                <tspan x="701.4" y="71" text-decoration="underline"> Possible Matches</tspan>
+            </text>
+            <g id="Rectangle">
+                <use fill="#4A90E2" fill-rule="evenodd" xlink:href="#path-26"></use>
+                <rect stroke="#979797" stroke-width="1" x="887.5" y="98.5" width="14" height="79"></rect>
+            </g>
+            <g id="Group-2" transform="translate(724.000000, 270.000000)">
+                <g id="Group" transform="translate(0.000000, 8.000000)" stroke="#000000" stroke-linecap="square">
+                    <path d="M0.247524752,1 L99.7524752,1" id="Line"></path>
+                    <path d="M0.247524752,21 L98.5,21" id="Line"></path>
+                    <path d="M0.247524752,41 L98.5,41" id="Line"></path>
+                </g>
+                <g id="Checkbox-/-Unchecked" transform="translate(113.000000, 0.000000)">
+                    <g id="Check-Background">
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-27"></use>
+                        <use fill="black" fill-opacity="1" filter="url(#filter-28)" xlink:href="#path-27"></use>
+                        <rect stroke="#979797" stroke-width="1" x="0.5" y="2.5" width="15" height="15" rx="2"></rect>
+                    </g>
+                </g>
+                <g id="Checkbox-/-Unchecked" transform="translate(113.000000, 20.000000)">
+                    <g id="Check-Background">
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-29"></use>
+                        <use fill="black" fill-opacity="1" filter="url(#filter-30)" xlink:href="#path-29"></use>
+                        <rect stroke="#979797" stroke-width="1" x="0.5" y="2.5" width="15" height="15" rx="2"></rect>
+                    </g>
+                </g>
+                <g id="Checkbox-/-Unchecked" transform="translate(113.000000, 40.000000)">
+                    <g id="Check-Background">
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-31"></use>
+                        <use fill="black" fill-opacity="1" filter="url(#filter-32)" xlink:href="#path-31"></use>
+                        <rect stroke="#979797" stroke-width="1" x="0.5" y="2.5" width="15" height="15" rx="2"></rect>
+                    </g>
+                </g>
+            </g>
+            <path d="M819.5,141 L936.5,141" id="Line" stroke="#4A4A4A" stroke-linecap="square"></path>
+        </g>
+    </g>
+</svg>
