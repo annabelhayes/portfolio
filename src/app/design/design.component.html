@@ -29,49 +29,41 @@
       </div>
     </div>
     <div class="row flex-row justify-content-between pb-4">
-      <div class="card card-ui col-4">
-        <div class="card-body">
-          <div class="text-center">
-            <h5 class="card-title mt-2 mb-1">ICE & Stage</h5>
-            <span class="badge badge-ui mr-1">UI & UX Design</span>
-            <span class="badge badge-secondary">Frontend</span><br>
-            <small class="dark"><b>07/17 - 04/19</b></small>
-            <p class="card-text mt-1">Designing and developing a Master Data Management system to enable the music
-              societies STIM, GEMA and PRS to collect and store audiovisual data.
-            </p>
-            <a (click)="scrollToElement(ice)"
-              class="dark small pointer">more<i class="fa fa-chevron-down"></i></a>
-          </div>
-        </div>
+      <div class="col-4 card card-ui">
+      <app-mini-card
+        [title]="'ICE & Stage'"
+        [duration]="'07/17 - 04/19'"
+        [intro]="'Designing and developing a Master Data Management system to enable the music
+        societies STIM, GEMA and PRS to collect and store audiovisual data.'"
+        (onScrollTo)="scrollToElement(ice)">
+        <span class="badge badge-graphic mr-1">UI & UX Design</span>
+        <span class="badge badge-web">Frontend</span>
+      </app-mini-card>
       </div>
-      <div class="card card-graphic col-4">
-        <div class="card-body text-center">
-          <h5 class="card-title mt-2 mb-1">Complements Only</h5>
-          <span class="badge badge-graphic mr-1">Graphic Design</span>
-          <span class="badge badge-web">Web Design</span><br>
-          <small class="dark"><b>07/18 - present</b></small>
-          <p class="card-text mt-1">Creating graphic artwork, developing a brand identity and designing the website for
-            a
-            new clothing brand I recently founded.
-          </p>
-          <a class="dark small pointer"
-            (click)="scrollToElement(graphic)">more<i class="fa fa-chevron-down"></i></a>
-        </div>
+      <div class="col-4 card card-graphic">
+      <app-mini-card
+        [title]="'Complements Only'"
+        [duration]="'07/18 - present'"
+        [intro]="'Creating graphic artwork, developing a brand identity and designing the website for
+          a
+          new clothing brand I recently founded.'"
+        (onScrollTo)="scrollToElement(graphic)">
+        <span class="badge badge-graphic mr-1">Graphic Design</span>
+        <span class="badge badge-web">Web Design</span>
+      </app-mini-card>
       </div>
-      <div class="card card-web col-4">
-        <div class="card-body text-center">
-          <h5 class="card-title mt-2 mb-1">DotGO</h5>
-          <span class="badge badge-web mr-1">Web Design</span>
-          <span class="badge badge-secondary mr-1">Sales</span><br>
-          <span class="badge badge-secondary mr-1">Copywriting</span><br>
-          <small class="dark"><b>07/16-09/16; 10/19-01/20</b></small>
-          <p class="card-text mt-1">Selling, designing and implementing custom-built websites for small businesses
-            throughout the UK.
-          </p>
-          <a (click)="scrollToElement(dotgo)"
-            class="dark small pointer">more<i class="fa fa-chevron-down"></i></a>
-        </div>
-      </div>
+      <div class="col-4 card card-web">
+      <app-mini-card
+        [title]="'DotGO'"
+        [duration]="'07/16-09/16; 10/19-01/20'"
+        [intro]="'Selling, designing and implementing custom-built websites for small businesses
+        throughout the UK.'"
+        (onScrollTo)="scrollToElement(dotgo)">
+        <span class="badge badge-web mr-1">Web Design</span>
+        <span class="badge badge-secondary mr-1">Sales</span><br>
+        <span class="badge badge-secondary mr-1">Copywriting</span>
+      </app-mini-card>
+    </div>
     </div>
     <div #ice
       style="visibility: hidden"></div>

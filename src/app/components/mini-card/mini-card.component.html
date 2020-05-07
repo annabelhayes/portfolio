@@ -1,0 +1,9 @@
+  <div class="card-body text-center">
+    <h5 class="card-title mt-2 mb-1">{{title}}</h5>
+      <ng-content></ng-content><br>
+       <small class="dark"><b>{{duration}}</b></small>
+      <p class="mt-1">{{intro}}</p>
+      <a (click)="scrollTo()"
+        class="dark small pointer">more<i class="fa fa-chevron-down">
+        </i></a>
+  </div>

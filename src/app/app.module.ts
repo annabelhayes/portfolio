@@ -13,6 +13,7 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { CreateComponent } from './create/create.component';
 import { ImproveComponent } from './improve/improve.component';
 import { DevelopComponent } from './develop/develop.component';
+import { MiniCardComponent } from './components/mini-card/mini-card.component';
 
 
 const appRoutes: Routes = [
@@ -67,7 +68,8 @@ const appRoutes: Routes = [
     DesignComponent,
     DevelopComponent,
     ImproveComponent,
-    CreateComponent
+    CreateComponent,
+    MiniCardComponent
   ],
   bootstrap: [AppComponent]
 })

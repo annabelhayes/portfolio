@@ -21,9 +21,7 @@ h1 {
 .light{
   color: #5C5C5C;
 }
-.pointer {
-  cursor: pointer !important;
-}
+
 
 .no-gutters {
   margin-right: 0;
@@ -38,10 +36,6 @@ h1 {
   color: rgb(20, 20, 20);
   font-size: 22px;
   margin-bottom: 0;
-}
-
-.cards {
-  margin-top: 10%
 }
 
 .card {
@@ -70,27 +64,13 @@ h1 {
   color: rgb(20, 20, 20);
 }
 
-.orange {
-  max-height: 40px;
-}
-
-.dotgo {
-  height: 40px
-}
-
-.ice {
-  text-align: right;
-  margin-top: 10px;
-}
 .badge-ui {
   color: rgb(255, 248, 234)  ;
-  /* background-color:  #D95555; */
   background-color: #699EBF;
 
 }
 .badge-web {
   color: rgb(255, 248, 234)  ;
-  /* background-color:  #699EBF; */
   background-color:  rgb(105, 191, 151);
 }
 
@@ -103,37 +83,20 @@ h1 {
   background-color: rgb(255, 248, 234) ;
 }
 
-.panel-pink {
-  background-color: #DEE4E1;
-  color:rgb(20, 20, 20);
-}
 .panel-blue {
   background-color:  rgb(226, 239, 241); ;
-}
-
-.panel-deeper-blue {
-  background-color:#CAD7DD;
 }
 
 .panel-blue-2 {
   background-color: rgb(217, 232, 235); ;
 }
 
-.panel-blue-3 {
-  background-color: rgb(226, 239, 241);
-}
-
 .panel-green {
-   /* background-color: #DFEFDB;  */
   background-color: rgb(232, 247, 232)
 }
 
 .full-height {
   height: 100vh;
-}
-
-.img-prob {
-  max-width: 66.66%;
 }
 
 .reflections-ui-card {
