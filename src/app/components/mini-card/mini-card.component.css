@@ -1,31 +1,4 @@
-.card-body {
-  color: #5C5C5C;
-}
-
-.dark{
-  color: rgb(20, 20, 20);
-}
-
-.card-title {
-  color: rgb(20, 20, 20);
-  font-size: 22px;
-  margin-bottom: 0;
-}
-.pointer {
-  cursor: pointer !important;
-}
-
-.ui {
-  /* color:  #D95555; */
-  color: #699EBF
-
-}
-.web {
-  /* color: #699EBF */
-  color: rgb(105, 191, 151);
-
-}
-
-.graphic {
-  color:  #F2B90C;
+.card {
+  background-color: #F5F5F5;
+  border-color:  rgb(228, 227, 227);
 }

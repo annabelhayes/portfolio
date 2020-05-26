@@ -1,0 +1,52 @@
+h1 {
+  font-size: 58px;
+}
+.container-820 {
+  max-width: 95%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.quote {
+  color: #8f8f8f
+}
+
+.panel-light {
+  background-color: #F5F5F5;
+}
+
+.work-row {
+  padding-top: 10%;
+}
+
+.intro {
+  min-height: 80vh
+}
+
+.badge-ui {
+  color: rgb(255, 248, 234)  ;
+  background-color: #699EBF;
+
+}
+.badge-web {
+  color: rgb(255, 248, 234)  ;
+  background-color:  rgb(105, 191, 151);
+}
+
+.badge-graphic {
+  color: rgb(255, 248, 234) ;
+  background-color:  #F2B90C;
+}
+
+.row-2 {
+  margin-top: 15%
+}
+
+.row-2 {
+  margin-top: 12%
+}

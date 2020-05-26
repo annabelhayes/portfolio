@@ -6,19 +6,27 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { NavComponent } from './nav/nav.component';
-import { DesignComponent } from './design/design.component';
+import { DesignComponent } from './components/design/design.component';
 import { StoreModule } from '@ngrx/store';
 import { reducers, metaReducers } from './app.reducer';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
-import { CreateComponent } from './create/create.component';
-import { ImproveComponent } from './improve/improve.component';
-import { DevelopComponent } from './develop/develop.component';
+import { CreateComponent } from './components/create/create.component';
+import { ImproveComponent } from './components/improve/improve.component';
+import { DevelopComponent } from './components/develop/develop.component';
+import { IceComponent } from './components/ice/ice.component';
+import { DotGoComponent } from './components/dotgo/dotgo.component';
+import { CompOnlyComponent } from './components/complements-only/complements-only.component';
 import { MiniCardComponent } from './components/mini-card/mini-card.component';
 
 
 const appRoutes: Routes = [
   {
-    path: '',
+    path: 'portfolio',
+    component: HomeComponent,
+    data: { animation: 'Home' }
+  },
+  {
+    path: ' ',
     component: HomeComponent,
     data: { animation: 'Home' }
   },
@@ -31,6 +39,21 @@ const appRoutes: Routes = [
     path: 'design',
     component: DesignComponent,
     data: { animation: 'Design' }
+  },
+  {
+    path: 'ice',
+    component: IceComponent,
+    data: { animation: 'ICE' }
+  },
+  {
+    path: 'dotgo',
+    component: DotGoComponent,
+    data: { animation: 'DotGo' }
+  },
+  {
+    path: 'complements-only',
+    component: CompOnlyComponent,
+    data: { animation: 'CompOnly' }
   },
   {
     path: 'develop',
@@ -64,12 +87,15 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     HomeComponent,
+    IceComponent,
     NavComponent,
     DesignComponent,
     DevelopComponent,
     ImproveComponent,
     CreateComponent,
-    MiniCardComponent
+    DotGoComponent,
+    CompOnlyComponent,
+    MiniCardComponent,
   ],
   bootstrap: [AppComponent]
 })

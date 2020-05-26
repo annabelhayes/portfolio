@@ -1,0 +1,29 @@
+<div #top
+  class="panel-light">
+  <div class="container">
+    <app-nav></app-nav>
+    <div #graphic
+      class="pt-4">
+      <div class="row flex-row justify-content-between">
+        <div class="col-3"></div>
+        <div class="col-6 align-self-center">
+          <img class="img-fluid"
+            src="assets/images/co.png">
+        </div>
+        <div class="col-3"></div>
+      </div>
+      <app-mini-card
+      [role]="'Founder, Graphic Designer, Website Designer, anything else you can think of...'"
+      [teamTitle]="'Team'"
+      [duration]="'07/18 onward'">
+    </app-mini-card>
+    </div>
+    <div class="row flex-row justify-content-end pt-5">
+      <div class="col-4 text-right mr-3">
+        <h6 class="pointer"> <span class="web"
+            (click)="onClick('ice')"> <i class="fa fa-chevron-left"></i> Previous Project</span> | <span
+            (click)="onClick('dotgo')"> Next Project <i class="fa fa-chevron-right"></i></span></h6>
+      </div>
+    </div>
+  </div>
+</div>

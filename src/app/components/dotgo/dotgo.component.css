@@ -1,0 +1,53 @@
+h1 {
+  font-size: 58px;
+  /* font-family: 'Noto Sans KR', sans-serif; */
+  font-family: 'Helvetica Neue', sans-serif;
+
+}
+.web {
+  /* color:rgba(129, 129, 129, 0.667); */
+  color:#5C5C5C;
+}
+
+.light{
+  color: #5C5C5C;
+}
+
+
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+.card {
+  background-color: #F5F5F5;;
+  border-color:  rgb(228, 227, 227);;
+}
+
+.dark{
+  color: rgb(20, 20, 20);
+}
+
+.panel-light {
+  background-color:#F5F5F5;
+}
+
+.panel-blue {
+  background-color: #C2E0F2;
+}
+
+
+.reflections-web-card {
+   border-color:#AAAA;;
+   background-color:#C2E0F2;
+}
+
+.card-dotgo2 {
+  background-color:rgb(247, 255, 251);
+  opacity: 0.9;
+}
+
+.icon-card {
+  background-color: #C2E0F2;
+  border-color:#AAAA;
+
+}

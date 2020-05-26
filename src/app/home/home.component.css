@@ -58,7 +58,7 @@
 }
 
 .main-title {
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: 'Helvetica Neue', sans-serif;
   color: #33322E;
   font-weight: bold;
   font-size: 55px;
@@ -81,7 +81,7 @@
 /* DESIGN
 design styling */
 #innertitle {
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: 'Helvetica Neue', sans-serif;
   font-weight: bold;
   font-size: 55px;
   color: #86A2A6 !important;

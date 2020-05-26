@@ -1,0 +1,30 @@
+h1 {
+  font-size: 58px;
+  /* font-family: 'Noto Sans KR', sans-serif; */
+  font-family: 'Helvetica Neue', sans-serif;
+
+}
+.ui {
+  /* color: #699EBF */
+  color:  #F2B90C;
+
+
+}
+
+
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.card {
+  background-color: #F5F5F5;;
+  border-color:  rgb(228, 227, 227);;
+}
+
+.panel-light {
+  background-color:  #FFFFFF;
+
+}
+
+
