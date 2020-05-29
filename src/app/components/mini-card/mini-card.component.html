@@ -22,9 +22,9 @@
       <img class="img-fluid"
         src="{{imgSrc}}">
     </div>
-    <div *ngIf="projectOverview && myInvolvement">
+    <div class="col-12" *ngIf="projectOverview && myInvolvement">
     <h4 class="pt-3">My Involvement</h4>
-    <ng-content select="p"></ng-content>
+    <ng-content select="span"></ng-content>
   </div>
   </div>
   <div class="row flex-row card mb-5 mt-5">
