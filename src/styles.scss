@@ -6,9 +6,14 @@ body {
 }
 
 p {
-   font-family: Gill Sans /* Replace with your custom font */, sans-serif !important;
-  /* Add !important to overwrite all elements */
+   font-family: Gill Sans, sans-serif !important;
 }
+
+
+span {
+  font-family: Gill Sans, sans-serif !important;
+}
+
 
 a {
   color: #8F8F8F !important;
