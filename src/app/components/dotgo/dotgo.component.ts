@@ -9,6 +9,22 @@ import { Router } from '@angular/router';
 })
 
 export class DotGoComponent implements OnInit {
+
+  iconRow = [
+    { title: 'Sale', description: 'I called existing clients and sold them new websites.' },
+    {
+      title: 'Research', description: 'I carried out client interviews and analysed competitors websites.'
+    },
+    {
+      title: 'Design', description: 'I planned out the site-map, imagery and colours for the website.'
+    },
+    {
+      title: 'Build', description: 'I built the website over a few days, using the DotGO system.'
+    },
+    {
+      title: 'Evaluate', description: 'I revealed the website and made any requested amendments.'
+    }];
+
   constructor(public router: Router) { }
 
   ngOnInit() {

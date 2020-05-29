@@ -1,6 +1,7 @@
 h1 {
   font-size: 58px;
 }
+
 .container-820 {
   max-width: 95%;
   margin-right: auto;
@@ -41,6 +42,12 @@ h1 {
 .badge-graphic {
   color: rgb(255, 248, 234) ;
   background-color:  #F2B90C;
+}
+
+
+.badge-pink {
+  color: rgb(255, 248, 234)  ;
+  background-color: rgb(223, 84, 84);
 }
 
 .row-2 {

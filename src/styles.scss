@@ -5,13 +5,16 @@ body {
   background-color: #FFFFFF !important
 }
 
-p {
+p, small {
    font-family: Gill Sans, sans-serif !important;
+   font-size: 18px;
+   color: rgb(58, 58, 58) !important;
 }
 
-
-span {
+.h-custom {
   font-family: Gill Sans, sans-serif !important;
+  letter-spacing: 1px;
+  font-size: 19px !important;
 }
 
 

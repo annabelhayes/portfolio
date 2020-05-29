@@ -19,92 +19,51 @@
     </app-mini-card>
   </div>
 </div>
-<div class="mt-5 panel-blue">
+<div class="mt-5 panel-blue full-height">
   <div class="container">
     <div clas="container-820">
-      <div class="row flex-row justify-content-between mt-5">
-        <div class="col-12">
-          <h4 class="mt-5">Responsibilities</h4>
+      <div class="padding-5">
+        <div class="row no-gutters">
+          <div class="col-12 mb-4 text-md-left text-center">
+            <div class="h-custom mb-3"><i>––CHALLENGE</i></div>
+            <p>to produce new, modern, SEO-optimised websites for existing clients that would:</p>
+            <ol>
+              <li>
+                <p>
+                  appeal to their users, with the capacity to <b>convert more potential customers into actual
+                    customers</b>,</p>
+              </li>
+              <li>
+                <p>
+                  fulfill each client's own design vision and aspirations.</p>
+              </li>
+            </ol>
+          </div>
         </div>
-      </div>
-      <div class="row flex-row mt-4 text-center justify-content-between">
-        <div class="col-4">
-          <div class="row flex-row justify-content-center">
-            <div class="col-6">
-              <span class="h5 web card icon-card p-3 shadow-sm">
-                <i class="fa fa-phone fa-2x">
-                </i><br>Sales
-              </span>
+        <div class="row mt-2 mb-2 flex-row text-center justify-content-between align-items-stretch">
+          <div class="col-12 mb-4 text-md-left text-center">
+            <div class="h-custom mb-3"><i>––WORKFLOW</i></div>
+          </div>
+          <div *ngFor="let icon of iconRow"
+            class="col-lg-2 col-12 text-center mb-3">
+            <div class="web card icon-card shadow-sm mx-auto">
+              <span class="h5 p-3 light">
+                <br>{{ icon.description }}</span>
+            </div>
+            <div class="mt-3 darker text-center">
+              <p>{{ icon.title }}</p>
             </div>
           </div>
         </div>
-        <div class="col-4">
-          <div class="row flex-row justify-content-center">
-            <div class="col-6">
-              <span class="h5 web card icon-card p-3 shadow-sm">
-                <i class="fa fa-sitemap fa-2x">
-                </i><br>Design
-              </span>
-            </div>
+        <div class="row mt-4 flex-row text-center justify-content-between align-items-stretch">
+          <div class="col-12 text-md-left text-center">
+            <div class="h-custom mb-3"><i>––RESULTS</i></div>
+            <p>I was proud that most clients required very little, if any, amendments.
+              I found that dedicating a lot of time to the "Research" stage, especially analysis of competitor's
+              websites,
+              was crucial for success.
+            </p>
           </div>
-        </div>
-        <div class="col-4">
-          <div class="row flex-row justify-content-center">
-            <div class="col-6">
-              <span class="h5 web card icon-card p-3 shadow-sm">
-                <i class="fa fa-edit fa-2x">
-                </i><br>Build
-              </span>
-            </div>
-          </div>
-        </div>
-        <div class="row flex-row mt-4">
-          <div class="col-4 mt-2">
-            <ul>
-              <p class="dark">
-                <li>I called existing clients and encouraged them to migrate their websites to our new, premium software
-                  platform.</li>
-                <li>
-                  Success ultimately relied on me relaying to customers why great ui & ux, alongside engaging content,
-                  is
-                  essential for every type of
-                  business.
-                </li>
-              </p>
-            </ul>
-          </div>
-          <div class="col-4 mt-2">
-            <ul>
-              <p class="dark">
-                <li>I carried out interviews to gain an in-depth understanding of each client’s business, what content
-                  they would like producing and what their design
-                  aspirations were.
-                </li>
-
-              </p>
-            </ul>
-          </div>
-          <div class="col-4 mt-2">
-            <ul>
-              <p class="dark">
-                <li>
-                  I used DotGo’s website builder to create clients more professional-looking, SEO-optimised and modern
-                  websites.
-                </li>
-                <li> After revealing client’s new websites, I provided any amendments
-                  they required.
-                </li>
-              </p>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="row mt-4">
-        <div class="col-12">
-          <h4 class="mt-3">Feedback</h4>
-          <p>I was very proud that for the majority of my clients, any amendments that were required after the site was
-            built were either small or non-existent. I also surpassed my sales targets.
-          </p>
         </div>
       </div>
     </div>
@@ -112,50 +71,35 @@
 </div>
 <div #dotgo2>
   <div class="container">
-    <div class="row flex-row justify-content-between pt-3">
-      <div class="col-12">
-        <h2><b>DotGo</b></h2>
-        <h4 class="mt-3">Return to DotGo in 2019</h4>
-        <p>As the company expanded, operations were split into: Sales, Digital Design and Content Writing, with
-          dedicated personnel for each role.
-          I returned to DotGo in 2019 for a 3 month contract as a Content Writer, before spending a few amazing months
-          skiing.
-        </p>
-      </div>
-    </div>
-    <app-mini-card
-    [introSection]= "false"
-    [role]="'Content Writer'"
-    [teamTitle]="'Content Team'"
-    [team]="'Nick Stallard'"
-    [duration]="'10/19 - 01/20'">
-  </app-mini-card>
-    <div class="row flex-row mb-2 no-gutters">
+    <div class="row flex-row mt-4 mb-2 no-gutters">
       <div class="col-6">
-        <h4 class="mt-3">Role</h4>
-        After reading through client’s and designer’s notes in a shared data area, I called clients’ and carried out a
-        detailed content consultation. I then wrote up their content, aiming for 350-500 words/page and interweaving
-        key
-        primary and secondary SEO phrases throughout.<br><br>
-        <b>Key Requirements</b>
-        <ul>
-          <li>
-            Create a consistent “voice” which runs throughout client's content, which fits their business
-            and would appeal to potential customers.
-          </li>
-          <li>Detailed
-            analysis of what made each client's business unique and how to sell it.</li>
-          <li>
-            Research into competitors to gain ideas about the structure and form of the content.
-          </li>
-        </ul>
+        <h4 class="mt-5">Return to DotGO in 2019</h4>
+        <p> As the company expanded, operations were split into: Sales, Digital Design and Content Writing, with
+          dedicated personnel for each role.
+          I returned to DotGo in 2019 for a 3 month contract as a Content Writer.
+        </p>
+        <h4 class="mt-4">Content Role</h4>
+        <p> After reading through client’s and designer’s notes in a shared data area, I called clients’ and carried out
+          a
+          detailed content consultation. I then wrote up their content, aiming for 350-500 words/page and interweaving
+          key
+          primary and secondary SEO phrases throughout.</p>
       </div>
       <div class="col-6">
         <img class="img-fluid"
           src="assets/images/content-ex.png">
       </div>
     </div>
-    <div class="pb-3">
+    <app-mini-card [introSection]="false"
+      [company]="'DotGO'"
+      [companies]="'DotGO'"
+      [role]="'Content Writer'"
+      [teamTitle]="'Content Team'"
+      [team]="'Nick Stallard'"
+      [duration]="'10/19 - 01/20'"
+      [imgSrc]="'assets/images/content-ex.png'">
+    </app-mini-card>
+    <div class="pb-5">
       <h4 class="mt-3">Examples</h4>
       <div class="row flex-row mb-2 mt-1 no-gutters">
         <div class="col-4 text-left">
@@ -188,16 +132,23 @@
     </div>
   </div>
 </div>
-<div  class="panel-blue">
+<div class="panel-light">
   <div class="container">
     <div class="row flex-row pt-5 justify-content-center">
       <div class="col-6 card reflections-web-card mt-3 p-1 shadow">
-        <h3 class="web pt-3 text-center"><b>Reflections <i class="fa fa-smile-o"></i></b></h3>
+        <h3 class="ui pt-3 text-center"><b>Reflections <i class="fa fa-smile-o"></i></b></h3>
         <div class="p-3">
-          <span>Working at DotGo gave me with great introduction to Web Design, Marketing, SEO and Copyrighting.
-          </span>
+          <p>Working at DotGo gave me with great introduction to Web Design, Marketing, SEO and Copyrighting. When
+            selling websites,
+            success ultimately relied on me relaying to
+            customers why great UI & UX,
+            alongside engaging content,
+            is
+            essential for every type of business. In doing so, I found that my own passion for UI & UX design grew
+            too.
+          </p>
         </div>
-        <h4 class="text-left pl-3 web">Key Learnings</h4>
+        <h4 class="text-left pl-3 ui">Key Learnings</h4>
         <span>
           <ul>
             <li>
@@ -210,7 +161,7 @@
                 that is enhanced through practise.</p>
 
             <li>
-              <p><b>Marketing</b> - Especially whilst Content Writing, I took on a Marketing role, writing with
+              <p><b>Marketing</b> - Whilst Content Writing, I took on a Marketing role, writing with
                 empathy and deploying attention-grabbing phrases to appeal to potential customers.
               </p>
             </li>
@@ -226,10 +177,9 @@
   </div>
   <div class="row flex-row justify-content-end pt-1 pb-3">
     <div class="col-3 text-right mr-3">
-      <h6 class="pointer"> <span
-        (click)="onClick('complements-only')"><i class="fa fa-chevron-left"></i> Previous Project
-          </span> | <span
-          (click)="onClick('design')"> Back to Design <i class="fa fa-chevron-up"></i></span></h6>
+      <h6 class="pointer"> <span (click)="onClick('complements-only')"><i class="fa fa-chevron-left"></i> Previous
+          Project
+        </span> | <span (click)="onClick('design')"> Back to Design <i class="fa fa-chevron-up"></i></span></h6>
     </div>
   </div>
 </div>

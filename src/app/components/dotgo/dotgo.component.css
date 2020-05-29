@@ -9,8 +9,12 @@ h1 {
   color:#5C5C5C;
 }
 
-.light{
+.light {
   color: #5C5C5C;
+}
+
+.darker {
+  color: rgb(65, 64, 64);
 }
 
 
@@ -24,7 +28,7 @@ h1 {
 }
 
 .dark{
-  color: rgb(20, 20, 20);
+  color: rgb(41, 41, 41);
 }
 
 .panel-light {
@@ -38,7 +42,7 @@ h1 {
 
 .reflections-web-card {
    border-color:#AAAA;;
-   background-color:#C2E0F2;
+   background-color:#F5F5F5;
 }
 
 .card-dotgo2 {
@@ -49,5 +53,17 @@ h1 {
 .icon-card {
   background-color: #C2E0F2;
   border-color:#AAAA;
+  height: 180px;
+  width:180px;
+}
+
+.padding-5 {
+  padding-top: 5%;
+}
+
+
+.ui {
+  /* color:  #D95555; */
+  color: #699EBF
 
 }
