@@ -1,8 +1,7 @@
 <div class="container-820">
   <div class="row flex-row mt-5"
     *ngIf="introSection">
-    <div class="col-6"
-      *ngIf="introSection">
+    <div class="col-md-6 col-12 text-md-left text-center">
       <h2><b>{{company}}</b></h2>
       <h4 *ngIf="background"
         class="mt-3">Background to {{companies}}</h4>
@@ -18,7 +17,7 @@
       <ng-content select="p"></ng-content>
     </div>
     </div>
-    <div class="col-6 align-self-end">
+    <div class="col-md-6 col-12 align-self-end">
       <img class="img-fluid"
         src="{{imgSrc}}">
     </div>
