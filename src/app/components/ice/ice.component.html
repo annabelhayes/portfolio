@@ -1,8 +1,7 @@
 <div #top>
   <div class="container">
     <app-nav></app-nav>
-    <app-mini-card
-      [introSection]="true"
+    <app-mini-card [introSection]="true"
       [myInvolvement]="true"
       [company]="'International Copyright Enterprise & Stage Enterprises'"
       [companies]="'ICE'"
@@ -17,8 +16,9 @@
       [teamTitle]="'Frontend Team'"
       [team]="'Christian Porzig'"
       [duration]="'07/17-04/19'"
-      [imgSrc]="'assets/images/design-ice-1.png'">
-      <span class="p"> I worked both remotely and on-site in Berlin for ICE, for <b>20hrs/per week</b>, whilst simultaneously
+      [imgSrc]="'assets/images/ice.png'">
+      <span class="p"> I worked both remotely and on-site in Berlin for ICE, for <b>20hrs/per week</b>, whilst
+        simultaneously
         completing a degree in History at the University of York.
         The project was outsourced from ICE to Stage Enterprises, in April 2019, who I then worked for entirely
         remotely until April 2020.
@@ -26,39 +26,38 @@
     </app-mini-card>
   </div>
 </div>
-<div
-  class="panel-blue">
-<div class="container">
+<div class="panel-blue">
+  <div class="container">
 
-  <h3 class="pt-4"><b>UI & UX Process</b></h3>
-  <h4 class="mt-2">1. Identify Common User Actions or “User Scenarios” and Create Storyboards
-  </h4>
-  <p><b>Example: “a user wishes to match a production with the correct match from a list of possible candidates”
-    </b></p>
-  <div class="row flex-row">
-    <div class="col-12">
-      <img class="img-fluid"
-        src="assets/images/task6.svg">
+    <h3 class="pt-4"><b>UI & UX Process</b></h3>
+    <h4 class="mt-2">1. Identify Common User Actions or “User Scenarios” and Create Storyboards
+    </h4>
+    <p><b>Example: “a user wishes to match a production with the correct match from a list of possible candidates”
+      </b></p>
+    <div class="row flex-row">
+      <div class="col-12">
+        <img class="img-fluid"
+          src="assets/images/task6.svg">
+      </div>
+      <!-- <div class="col-6"></div> -->
     </div>
-    <!-- <div class="col-6"></div> -->
-  </div>
-  <div class="row">
-    <div class="col-12">
-      <p>After conducting interviews with users and reading through the system
-        requirements
-        documentation,* we identified simple “user scenarios” that detailed key actions a user might perform.
+    <div class="row">
+      <div class="col-12">
+        <p>After conducting interviews with users and reading through the system
+          requirements
+          documentation,* we identified simple “user scenarios” that detailed key actions a user might perform.
 
-        From these “user scenarios,” I created basic wireframes (above), in order
-        to
-        determine how, when and where certain information should be displayed. <br><br><small><i>*Although we
-            worked
-            as an Agile
-            Scrum
-            team, the project was initially set up following a “waterfall” approach.</i></small>
-      </p>
+          From these “user scenarios,” I created basic wireframes (above), in order
+          to
+          determine how, when and where certain information should be displayed. <br><br><small><i>*Although we
+              worked
+              as an Agile
+              Scrum
+              team, the project was initially set up following a “waterfall” approach.</i></small>
+        </p>
+      </div>
     </div>
   </div>
-</div>
 </div>
 <div class="panel-light">
   <div class="container">
@@ -164,7 +163,7 @@
 <div>
   <div class="container">
     <div class="row flex-row pt-5 justify-content-center">
-      <div class="col-6 card reflections-ui-card mt-5 p-1">
+      <div class="col-md-6 col-11 card reflections-ui-card mt-5 p-1">
         <h3 class="ui pt-3 text-center"><b>Reflections <i class="fa fa-smile-o"></i></b></h3>
         <div class="p-3">
           <span>My experience at ICE and Stage was incredibly rewarding. From working in an entirely new city
@@ -206,12 +205,10 @@
       </div>
     </div>
   </div>
-  <div class="row flex-row justify-content-end pt-5">
-    <div class="col-3 text-right mr-3">
-      <h6 class="pointer"> <span
-        (click)="onClick('design')"> Back to Design <i class="fa fa-chevron-up"></i>
-          </span> | <span
-          (click)="onClick('complements-only')"> Next Project <i class="fa fa-chevron-right"></i></span></h6>
+  <div class="row flex-row justify-content-end pb-3 mt-md-3 mt-5">
+    <div class="col-md-3 col-12 text-right mr-3">
+      <h6 class="pointer"> <span (click)="onClick('design')">Back to Design <i class="fa fa-chevron-up"></i>
+        </span> | <span (click)="onClick('dotgo')"> Next Project <i class="fa fa-chevron-right"></i></span></h6>
     </div>
   </div>
 </div>
