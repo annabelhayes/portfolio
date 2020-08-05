@@ -17,21 +17,33 @@
   cursor: pointer !important;
 }
 
-.portrait {
-  width: 120%;
+@media only screen and (max-width: 768px) {
+  .portrait {
+    max-width: 120%;
+    margin-left: 40%;
+  }
+
 }
 
-.no-gutters {
-  margin-right: 0;
-  margin-left: 0;
-}
+
+@media only screen and (min-width: 768px) {
+  .portrait {
+    max-width: 120%;
+  }
 
 .portrait-col {
   padding-right: 0;
   padding-left: 0;
 }
 
+}
 
+
+
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
 .first-row {
   margin-top: 80px;
 }
@@ -44,15 +56,6 @@
   height: 200px;
 }
 
-@media only screen and (max-width: 692px) {
-  .main-title-first-row {
-    height: 200px;
-  }
-
-  .main-title-second-row {
-    height: 200px;
-  }
-}
 
 .main-title {
   font-family: 'Helvetica Neue', sans-serif;
