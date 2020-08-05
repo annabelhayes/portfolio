@@ -1,7 +1,7 @@
 <div class="container-820">
   <div class="row flex-row mt-5"
     *ngIf="introSection">
-    <div class="col-md-6 col-12 text-md-left text-center">
+    <div class="col-lg-6 col-12 text-md-left text-center">
       <h2><b>{{company}}</b></h2>
       <h4 *ngIf="background"
         class="mt-3">Background to {{companies}}</h4>
@@ -12,16 +12,16 @@
         class="pt-3">Project Overview</h4>
       <p>{{ projectOverview}}</p>
     </div>
-    <div *ngIf="!projectOverview">
+    <div *ngIf="!projectOverview" class="text-md-left text-center">
       <h4 class="pt-3">My Involvement</h4>
       <ng-content select="p"></ng-content>
     </div>
     </div>
-    <div class="col-md-6 col-12 align-self-end">
+    <div class="col-lg-6 col-12 align-self-end">
       <img class="img-fluid"
         src="{{imgSrc}}">
     </div>
-    <div class="col-12" *ngIf="projectOverview && myInvolvement">
+    <div class="col-12"  class="text-md-left text-center" *ngIf="projectOverview && myInvolvement">
     <h4 class="pt-3">My Involvement</h4>
     <ng-content select="span"></ng-content>
   </div>
