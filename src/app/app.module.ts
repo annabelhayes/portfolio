@@ -26,7 +26,7 @@ const appRoutes: Routes = [
     data: { animation: 'Home' }
   },
   {
-    path: ' ',
+    path: '',
     component: HomeComponent,
     data: { animation: 'Home' }
   },
