@@ -35,8 +35,6 @@ export class DotGoComponent implements OnInit {
     $element.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
   }
 
-
-  // wait for animation to complete before navigating to route...
   onClick(key: string) {
     this.router.navigate([key]);
   }
