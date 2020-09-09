@@ -16,6 +16,9 @@ import { Router, NavigationEnd } from '@angular/router';
 export class HomeComponent implements OnInit {
   constructor(private store: Store<AppState>, public router: Router) { }
   layoutVal$: any;
+  /* very local state, not managed in the global store
+   * http://redux.js.org/docs/faq/OrganizingState.html */
+  isLoaded = false;
 
   onMouseEnter(key) {
     this.layoutVal$.pipe(
@@ -49,6 +52,9 @@ export class HomeComponent implements OnInit {
       });
   }
 
+  onLoad() {
+    this.isLoaded = true;
+  }
 
   ngOnInit() {
     /* Map state to props */

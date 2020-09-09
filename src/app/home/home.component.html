@@ -6,9 +6,14 @@
       </div>
     </div>
     <div class="row no-gutters">
-      <div class="col-6 col-md-3 portrait-col mt-5">
-        <img class="portrait"
-          src="assets/images/portrait.png">
+      <div class="col-6 col-md-3 justify-content-center align-self-center mb-5">
+        <div class="align-self-center" *ngIf="!isLoaded"
+          class="spinner"></div>
+        <div [ngStyle]="{ visibility: !isLoaded ? 'hidden': '' }">
+          <img class="portrait"
+            src="assets/images/portrait.png"
+            (load)="onLoad()">
+        </div>
       </div>
       <div class="col-md-1"></div>
       <div class="col-12 order-first order-md-2 col-md-8">
