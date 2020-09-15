@@ -7,6 +7,10 @@ import { Component } from '@angular/core';
 })
 
 export class DevelopComponent {
+  isLoaded = false;
+  onLoad() {
+    this.isLoaded = true;
+  }
 
 }
 

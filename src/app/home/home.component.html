@@ -6,8 +6,8 @@
       </div>
     </div>
     <div class="row no-gutters">
-      <div class="col-6 col-md-3 justify-content-center align-self-center mb-5">
-        <div class="align-self-center" *ngIf="!isLoaded"
+      <div class="col-6 col-md-3 align-self-center mb-5">
+        <div *ngIf="!isLoaded"
           class="spinner"></div>
         <div [ngStyle]="{ visibility: !isLoaded ? 'hidden': '' }">
           <img class="portrait"

@@ -30,9 +30,14 @@
                 (click)="scrollToElement(work)"><b>check out my work <i class="fa fa-chevron-down"></i></b></span></h6>
         </div>
         <div class="col-md-5 col-12 align-self-center ml-0 mb-5 ml-md-5">
+          <div *ngIf="!isLoaded"
+          class="spinner"></div>
+        <div [ngStyle]="{ visibility: !isLoaded ? 'hidden': '' }">
           <img class="img-fluid"
-            style="height: 90%; width: 90%"
-            src="assets/images/diagram.png">
+          style="height: 90%; width: 90%"
+          src="assets/images/diagram.png"
+            (load)="onLoad()">
+        </div>
           <h6 class="mt-5 text-center"><span class="pointer d-md-none"
               style=" text-decoration: underline"
               (click)="scrollToElement(work)"><b>check out my work <i class="fa fa-chevron-down"></i></b></span></h6>

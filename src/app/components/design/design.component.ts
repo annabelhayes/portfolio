@@ -12,6 +12,8 @@ export class DesignComponent implements OnInit {
   constructor(public router: Router) { }
 
   moreClicked = false;
+  isLoaded = false;
+
 
   ngOnInit() {
     AOS.init();
@@ -29,6 +31,11 @@ export class DesignComponent implements OnInit {
 
   OnClickExternal(url: string) {
     window.open(url, 'blank_');
+  }
+
+  // to do - move spinner to shared component
+  onLoad() {
+    this.isLoaded = true;
   }
 }
 
