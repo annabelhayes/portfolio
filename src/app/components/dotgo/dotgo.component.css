@@ -13,10 +13,6 @@ h1 {
   color: #5C5C5C;
 }
 
-.darker {
-  color: rgb(65, 64, 64);
-}
-
 .card {
   background-color: #F5F5F5;;
   border-color:  rgb(228, 227, 227);;
@@ -25,15 +21,6 @@ h1 {
 .dark{
   color: rgb(41, 41, 41);
 }
-
-.panel-light {
-  background-color:#F5F5F5;
-}
-
-.panel-blue {
-  background-color: #C2E0F2;
-}
-
 
 .reflections-web-card {
    border-color:#AAAA;;
