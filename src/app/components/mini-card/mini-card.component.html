@@ -1,4 +1,4 @@
-<div class="container-820">
+<div class="container">
   <div class="row flex-row mt-5"
     *ngIf="introSection">
     <div class="col-lg-6 col-12 text-md-left text-center">
@@ -21,7 +21,7 @@
       <img class="img-fluid"
         src="{{imgSrc}}">
     </div>
-    <div class="col-12"  class="text-md-left text-center" *ngIf="projectOverview && myInvolvement">
+    <div class="col-12 text-md-left text-center" *ngIf="projectOverview && myInvolvement">
     <h4 class="pt-3">My Involvement</h4>
     <ng-content select="span"></ng-content>
   </div>
