@@ -40,21 +40,23 @@
             </ol>
           </div>
         </div>
-        <div class="row mt-2 mb-2 flex-row text-center justify-content-between align-items-stretch">
-          <div class="col-12 mb-4 text-md-left text-center">
-            <div class="h-custom mb-3"><i>––WORKFLOW</i></div>
-          </div>
-          <div *ngFor="let icon of iconRow"
-            class="col-lg-2 col-12 text-center mb-3">
-            <div class="web card icon-card shadow-sm mx-auto">
-              <span class="h5 pl-3 pb-3 pt-2 pr-3 light">
-                <br>{{ icon.description }}</span>
-            </div>
-            <div class="mt-3 darker text-center">
-              <p>{{ icon.title }}</p>
-            </div>
-          </div>
-        </div>
+        <app-icon-row
+        [iconRow]="[
+        { title: 'Sale', description: 'Called existing clients and sold them new websites.' },
+        {
+          title: 'Research', description: 'Carried out client interviews & analysed competitors.'
+        },
+        {
+          title: 'Design', description: 'Planned out the site-map, images and colours.'
+        },
+        {
+          title: 'Build', description: 'Built the site over a few days using the DotGO system.'
+        },
+        {
+          title: 'Evaluate', description: 'Revealed website & made any requested changes.'
+        }]
+        ">
+      </app-icon-row>
         <div class="row mt-4 flex-row text-center justify-content-between align-items-stretch">
           <div class="col-12 text-md-left text-center">
             <div class="h-custom mb-3"><i>––RESULTS</i></div>

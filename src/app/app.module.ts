@@ -17,7 +17,7 @@ import { IceComponent } from './components/ice/ice.component';
 import { DotGoComponent } from './components/dotgo/dotgo.component';
 import { CompOnlyComponent } from './components/complements-only/complements-only.component';
 import { MiniCardComponent } from './components/mini-card/mini-card.component';
-
+import { IconRowComponent } from './components/icon-row/icon-row.component';
 
 const appRoutes: Routes = [
   {
@@ -96,6 +96,7 @@ const appRoutes: Routes = [
     DotGoComponent,
     CompOnlyComponent,
     MiniCardComponent,
+    IconRowComponent
   ],
   bootstrap: [AppComponent]
 })
