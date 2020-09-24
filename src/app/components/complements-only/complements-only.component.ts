@@ -22,6 +22,10 @@ export class CompOnlyComponent implements OnInit {
   onClick(key: string) {
     this.router.navigate([key]);
   }
+
+  OnClickExternal(url: string) {
+    window.open(url, 'blank_');
+  }
 }
 
 

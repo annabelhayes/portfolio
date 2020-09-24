@@ -29,10 +29,6 @@ export class DesignComponent implements OnInit {
     this.router.navigate([key]);
   }
 
-  OnClickExternal(url: string) {
-    window.open(url, 'blank_');
-  }
-
   // to do - move spinner to shared component
   onLoad() {
     this.isLoaded = true;

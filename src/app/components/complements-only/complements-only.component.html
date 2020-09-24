@@ -2,28 +2,39 @@
   class="panel-light">
   <div class="container">
     <app-nav></app-nav>
-    <div #graphic
-      class="pt-4">
-      <div class="row flex-row justify-content-between">
-        <div class="col-3"></div>
-        <div class="col-6 align-self-center">
-          <img class="img-fluid"
-            src="assets/images/co.png">
-        </div>
-        <div class="col-3"></div>
-      </div>
-      <app-mini-card
-      [role]="'Founder, Graphic Designer, Website Designer, anything else you can think of...'"
+    <app-mini-card [introSection]="true"
+      [myInvolvement]="true"
+      [company]="'Complements Only'"
+      [companies]="'Complements Only'"
+      [background]="'Complements Only is a unisex clothing brand that I created. It’s inspired by streetwear and skateboarding culture,
+      with an emphasis on bold graphic designs and the use of complementary colours. Instead of dressing for the approval of others
+      (or for “compliments”), Complements Only promotes a mentality of “dressing for yourself” in comfortable, functional clothing that complements
+      a fun lifestyle and wardrobe. '"
+
+      [projectOverview]="'Alongside creating and printing the designs, I needed to create a website for Complements Only that was easy to use, mobile-friendly, refleced the values of the brand,
+      and encouraged both sales and repeat business.'"
+      [role]="'Founder'"
       [teamTitle]="'Team'"
-      [duration]="'07/18 onward'">
+      [duration]="'07/19 onward'"
+      [imgSrc]="'assets/images/co-2.png'">
+      <span class="p"> After creating the brand concept and graphic artwork, I designed the website between July - August 2020. Although I used a CMS to build the website,
+        I edited large sections of the HTML code in order to fully customise the appearance of the site and ensure it was mobile-responsive. <br>
+        <h6 class="mt-3"><span class="pointer"
+          style=" text-decoration: underline"
+          (click)="OnClickExternal('http://www.complementsonly.co.uk')">
+          <b>view website (WIP)
+            <i class="fa fa-external-link">
+            </i></b>
+        </span>
+      </h6>
+      </span>
     </app-mini-card>
-    </div>
-    <div class="row flex-row justify-content-end pt-5">
-      <div class="col-4 text-right mr-3">
-        <h6 class="pointer"> <span class="web"
-            (click)="onClick('ice')"> <i class="fa fa-chevron-left"></i> Previous Project</span> | <span
-            (click)="onClick('dotgo')"> Next Project <i class="fa fa-chevron-right"></i></span></h6>
-      </div>
+  </div>
+  <div class="row flex-row justify-content-end pt-5">
+    <div class="col-4 text-right mr-3">
+      <h6 class="pointer"> <span class="web"
+          (click)="onClick('ice')"> <i class="fa fa-chevron-left"></i> Previous Project</span> | <span
+          (click)="onClick('dotgo')"> Next Project <i class="fa fa-chevron-right"></i></span></h6>
     </div>
   </div>
 </div>
