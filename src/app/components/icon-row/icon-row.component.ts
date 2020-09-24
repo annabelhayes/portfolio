@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { IconRow } from 'src/app/model/icons';
+import { IconRow } from '../../model/icons';
 
 @Component({
   selector: 'app-icon-row',
