@@ -3,7 +3,7 @@ h1 {
 }
 
 .card {
-  border-color: rgb(223, 84, 84) !important;
+  border-color: rgb(223, 84, 84);
   border-width: 2px;
 }
 .card-body {
@@ -25,15 +25,15 @@ h1 {
 
 @media only screen and (max-width: 768px) {
   .card {
-    max-width: 80% !important;
-    margin-left: 10% !important;
-    margin-top: 5% !important;
+    max-width: 80%;
+    margin-left: 10%;
+    margin-top: 5%;
   }
 }
 
 
 @media only screen and (min-width: 768px) {
   .card {
-    max-width: 32.5% !important;
+    max-width: 32.5%;
   }
 }

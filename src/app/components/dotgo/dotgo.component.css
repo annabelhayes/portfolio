@@ -9,10 +9,6 @@ h1 {
   color:#5C5C5C;
 }
 
-.light {
-  color: #5C5C5C;
-}
-
 .card {
   background-color: #F5F5F5;;
   border-color:  rgb(228, 227, 227);;
@@ -41,11 +37,4 @@ h1 {
 
 .padding-5 {
   padding-top: 5%;
-}
-
-
-.ui {
-  /* color:  #D95555; */
-  color: #699EBF
-
 }

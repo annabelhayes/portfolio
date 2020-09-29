@@ -36,19 +36,19 @@
 }
 
 body {
-  background-color: #FFFFFF !important
+  background-color: #FFFFFF;
 }
 
 p, small {
-   font-family: Gill Sans, sans-serif !important;
+   font-family: Gill Sans, sans-serif ;
    font-size: 18px;
-   color: rgb(58, 58, 58) !important;
+   color: rgb(58, 58, 58);
 }
 
 .h-custom {
-  font-family: Gill Sans, sans-serif !important;
+  font-family: Gill Sans, sans-serif;
   letter-spacing: 1px;
-  font-size: 19px !important;
+  font-size: 19px;
 }
 
 
@@ -63,11 +63,11 @@ a {
 }
 
 .pointer {
-  cursor: pointer !important;
+  cursor: pointer;
 }
 
 .navbar {
-  color: #F2EBDC !important
+  color: #F2EBDC
 }
 
 .pink {
@@ -108,12 +108,6 @@ html, body {
 
 .blue {
   color: #6cb2dc
-}
-
-.reflections-ui-card {
-  border-color: #699EBF;
-  background-color:  rgb(255, 255, 255);
-
 }
 
 .ui {
