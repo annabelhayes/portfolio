@@ -5,16 +5,6 @@ h1 {
 
 }
 
-.ui {
-  /* color:  #D95555; */
-  color: #699EBF
-
-}
-
-.light{
-  color: #5C5C5C;
-}
-
 .card-title {
   color: rgb(20, 20, 20);
   font-size: 22px;
@@ -36,12 +26,6 @@ h1 {
 
 .full-height {
   height: 100vh;
-}
-
-.reflections-ui-card {
-  border-color: #699EBF;
-  background-color:  rgb(255, 255, 255);
-
 }
 
 .container-820 {

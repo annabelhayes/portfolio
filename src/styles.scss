@@ -91,8 +91,12 @@ html, body {
 
 .panel-light {
   background-color:  #FFFFFF;
-
 }
+
+.panel-grey {
+  background-color: #f1f1f1;
+}
+
 
 .panel-blue {
   background-color: #C2E0F2;
@@ -100,4 +104,22 @@ html, body {
 
 .darker {
   color: rgb(65, 64, 64);
+}
+
+.blue {
+  color: #6cb2dc
+}
+
+.reflections-ui-card {
+  border-color: #699EBF;
+  background-color:  rgb(255, 255, 255);
+
+}
+
+.ui {
+  color: #699EBF
+}
+
+.light{
+  color: #5C5C5C;
 }

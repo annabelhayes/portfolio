@@ -4,11 +4,9 @@ h1 {
   font-family: 'Helvetica Neue', sans-serif;
 
 }
-.ui {
-  /* color: #699EBF */
-  color:  #F2B90C;
 
-
+.blue {
+  color: #3f96ca
 }
 
 .card {
@@ -16,3 +14,7 @@ h1 {
   border-color:  rgb(228, 227, 227);;
 }
 
+.findings-icons {
+height: 100px;
+margin-bottom: 1rem;
+}
