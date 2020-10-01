@@ -8,23 +8,24 @@
       <p>{{background}}
       </p>
       <div *ngIf="projectOverview">
-      <h4
-        class="pt-3">Project Overview</h4>
-      <p>{{ projectOverview}}</p>
-    </div>
-    <div *ngIf="!projectOverview" class="text-md-left text-center">
-      <h4 class="pt-3">My Involvement</h4>
-      <ng-content select="p"></ng-content>
-    </div>
+        <h4 class="pt-3">Project Overview</h4>
+        <p>{{ projectOverview}}</p>
+      </div>
+      <div *ngIf="!projectOverview"
+        class="text-md-left text-center">
+        <h4 class="pt-3">My Involvement</h4>
+        <ng-content select="p"></ng-content>
+      </div>
     </div>
     <div class="col-lg-6 col-12 align-self-end">
       <img class="img-fluid"
         src="{{imgSrc}}">
     </div>
-    <div class="col-12 text-md-left text-center" *ngIf="projectOverview && myInvolvement">
-    <h4 class="pt-3">My Involvement</h4>
-    <ng-content select="span"></ng-content>
-  </div>
+    <div class="col-12 text-md-left text-center"
+      *ngIf="projectOverview && myInvolvement">
+      <h4 class="pt-3">My Involvement</h4>
+      <ng-content select="span"></ng-content>
+    </div>
   </div>
   <div class="row flex-row card mb-5 mt-5">
     <div class="col-4 text-center">
@@ -33,8 +34,8 @@
     </div>
     <div class="col-4 text-center">
       <b>{{ teamTitle}} </b><br>
-      <div *ngIf="team">  {{team}}</div>
       Annabel Hayes
+      <div *ngIf="team"> {{team}}</div>
     </div>
     <div class="col-4 text-center">
       <b>Duration</b><br>
