@@ -2,6 +2,10 @@ h1 {
   font-size: 58px;
 }
 
+ul {
+  list-style-position: inside;
+}
+
 .card {
   border-color: rgb(223, 84, 84);
   border-width: 2px;
