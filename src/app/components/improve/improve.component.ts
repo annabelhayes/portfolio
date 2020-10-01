@@ -8,5 +8,7 @@ import { Component } from '@angular/core';
 
 export class ImproveComponent {
 
+  // TO DO - create contact form instead of mailto link
+
 }
 
