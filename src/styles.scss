@@ -56,10 +56,10 @@ a {
   color: #8F8F8F !important;
 }
 
-.container-820 {
-  max-width: 95%;
-  margin-right: auto;
-  margin-left: auto;
+@media (min-width: 1200px) {
+  .container{
+      max-width: 80% !important;
+  }
 }
 
 .pointer {

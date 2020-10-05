@@ -2,22 +2,12 @@ h1 {
   font-size: 58px;
 }
 
-.container-820 {
-  max-width: 95%;
-  margin-right: auto;
-  margin-left: auto;
-}
-
 .quote {
   color: #8f8f8f
 }
 
 .work-row {
   padding-top: 10%;
-}
-
-.intro {
-  min-height: 80vh
 }
 
 .badge-ui {
