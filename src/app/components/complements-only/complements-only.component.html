@@ -1,41 +1,41 @@
-<div #top
-  class="panel-light">
-  <div class="container">
-    <app-nav></app-nav>
-    <app-mini-card [introSection]="true"
-      [myInvolvement]="true"
-      [company]="'Complements Only'"
-      [companies]="'Complements Only'"
-      [background]="'Complements Only is a unisex clothing brand that I created. It’s inspired by streetwear and skateboarding culture,
+<app-nav></app-nav>
+<main>
+  <section>
+    <div class="container">
+      <app-mini-card [introSection]="true"
+        [myInvolvement]="true"
+        [company]="'Complements Only'"
+        [companies]="'Complements Only'"
+        [background]="'Complements Only is a unisex clothing brand that I created. It’s inspired by streetwear and skateboarding culture,
       with an emphasis on bold graphic designs and the use of complementary colours. Instead of dressing for the approval of others
       (or for “compliments”), Complements Only promotes a mentality of “dressing for yourself” in comfortable, functional clothing that complements
       a fun lifestyle and wardrobe. '"
-      [projectOverview]="'Alongside creating and printing the designs, I needed to create a website for Complements Only that was easy to use, mobile-friendly, reflected the values of the brand,
+        [projectOverview]="'Alongside creating and printing the designs, I needed to create a website for Complements Only that was easy to use, mobile-friendly, reflected the values of the brand,
       and encouraged both sales and repeat business.'"
-      [role]="'Founder'"
-      [teamTitle]="'Team'"
-      [duration]="'07/19 onward'"
-      [imgSrc]="'assets/images/co-2.png'">
-      <span class="p"> After creating the brand concept and graphic artwork, I designed the website between July -
-        August 2020. Although I used a CMS to build the website,
-        I edited large sections of the HTML code in order to fully customise the appearance of the site and ensure it
-        was mobile-responsive. <br>
-        <h6 class="mt-3"><span class="pointer"
-            style=" text-decoration: underline"
-            (click)="OnClickExternal('http://www.complementsonly.co.uk')">
-            <b>view website
-              <i class="fa fa-external-link">
-              </i></b>
-          </span>
-        </h6>
-      </span>
-    </app-mini-card>
-  </div>
-</div>
-<div class="panel-blue">
-  <div class="container text-md-left text-center">
-    <h3 class="pt-5 pb-3"><b>UI & UX Process</b></h3>
-    <app-icon-row [iconRow]="[
+        [role]="'Founder'"
+        [teamTitle]="'Team'"
+        [duration]="'07/19 onward'"
+        [imgSrc]="'assets/images/co-2.png'">
+        <span class="p"> After creating the brand concept and graphic artwork, I designed the website between July -
+          August 2020. Although I used a CMS to build the website,
+          I edited large sections of the HTML code in order to fully customise the appearance of the site and ensure it
+          was mobile-responsive. <br>
+          <h6 class="mt-3"><span class="pointer"
+              style=" text-decoration: underline"
+              (click)="OnClickExternal('http://www.complementsonly.co.uk')">
+              <b>view website
+                <i class="fa fa-external-link">
+                </i></b>
+            </span>
+          </h6>
+        </span>
+      </app-mini-card>
+    </div>
+  </section>
+  <section class="panel-blue">
+    <div class="container text-md-left text-center">
+      <h3 class="pt-5 pb-3"><b>UI & UX Process</b></h3>
+      <app-icon-row [iconRow]="[
           { title: 'Understand', description: 'Established core brand values and identifed target users.' },
           {
             title: 'Research', description: 'Interviewed users and analysed competitors.'
@@ -49,303 +49,304 @@
           {
             title: 'Evaluate', description: 'Carried out usability testing and anaylsed feedback.'
           }]">
-    </app-icon-row>
-    <div class="col-12 mb-4 text-md-left text-center pb-4 ">
-      <div class="h-custom mb-3"><i>––CHALLENGE</i></div>
-      <p>to create a user-friendly, mobile-friendly e-commerce website that would: </p>
+      </app-icon-row>
+      <div class="col-12 mb-4 text-md-left text-center pb-4 ">
+        <div class="h-custom mb-3"><i>––CHALLENGE</i></div>
+        <p>to create a user-friendly, mobile-friendly e-commerce website that would: </p>
+        <ol>
+          <li>
+            <p>
+              have a strong brand presence, reflecting the core values of the brand in the design of the website
+              itself,
+          </li>
+          <li>
+            <p>
+              pursuade new customers to purchase products and encourage repeat business from existing customers.
+            </p>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+  <section class="panel-light">
+    <div class="container text-md-left text-center">
+      <h3> 1. Understanding the Brand and Target Users</h3>
+      <div class="row">
+        <div class="col-md-8 col-12 offset-md-2">
+          <img class="img-fluid"
+            src="assets/images/brand-values.png">
+        </div>
+      </div>
+      <p>I identified the above characterstics, which I referred to whilst designing the website,
+        in order to ensure the site reflected the brand's identity.</p>
+      <h4>Target Users</h4>
+      <p>For the first product launch, my target users were indiviudals aged between 18-30
+        living around London, as the majority of the followers on the Complements Only Instagram were in this
+        demographic.
+        All marketing was carried out via Instagram, so I expected most users to shop using their mobile phones.
+      </p>
+    </div>
+  </section>
+  <section class="panel-grey pb-4 pt-4">
+    <div class="container text-md-left text-center">
+      <h3>2. Research </h3>
+      <div class="row">
+        <div class="col-12">
+          <h4>Competitor Analysis </h4>
+          <p>I identified key competitors within the industry, such as Carhartt and Stussy, and then compiled a table
+            that outlined how, what and where information was displayed throughout their websites. I focused on the home
+            page in particular. My key findings were:<br>
+          </p>
+          <ul class="blue">
+            <li class="mt-1">
+              <h6>
+                Preference for non text-heavy, image-led sites.
+              </h6>
+            </li>
+            <li class="mt-1">
+              <h6>
+                Cleanly designed websites, with lots of whitespace, were more compelling and satisfying to use.
+              </h6>
+            </li>
+            <li class="mt-1">
+              <h6>
+                Numerous links to products and product categories throughout the home page promoted sales.
+              </h6>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <h4 class="pt-1">User Interviews </h4>
+      <p>I questioned individuals within my target demographic, in order to understand their wants, needs and
+        expectations for an e-commerce website. I discovered that:
+      </p>
+      <div class="row pt-1">
+        <div class="col-12 col-md-4 text-center">
+          <img class="findings-icons"
+            src="assets/images/mobile.png">
+          <h6 class="blue">All users frequently purchased clothing through their mobiles. </h6>
+        </div>
+        <div class="col-12 col-md-4 text-center">
+          <img class="findings-icons"
+            src="assets/images/eco.png">
+          <h6 class="blue">Users favoured sustainable brands, however designs were the most important factor
+            when making purchasing decisions. </h6>
+        </div>
+        <div class="col-12 col-md-4 text-center">
+          <img class="findings-icons"
+            src="assets/images/paypal.png">
+          <h6 class="blue">Users favoured paypal checkout over manually entering card details and addresses. </h6>
+
+        </div>
+      </div>
+      <h4 class="pt-1">Business Requirements</h4>
+      <p>I noted down the high-level business requirements I needed each page of the website to fulfil:
+      </p>
+      <div class="row">
+        <div class="col-6">
+          <h5 class="light">Home</h5>
+          <ul>
+            <li class="mt-1">
+              <span>
+                Make users want to buy products and showcase which products exist.
+              </span>
+            </li>
+            <li class="mt-1">
+              <span>
+                Provide key information about the company (such as the made-to-order process and availability of custom
+                designs).
+              </span>
+            </li>
+            <li class="mt-1">
+              <span>
+                Make users want to find out more about the brand.
+              </span>
+            </li>
+            <li class="mt-1">
+              <span>
+                Provide quick links for getting in touch.
+              </span>
+            </li>
+          </ul>
+        </div>
+        <div class="col-6">
+          <h5 class="light">About</h5>
+          <ul>
+            <li class="mt-1">
+              <span>
+                Make users aware of the brand's message and therefore also want to be aligned with those values.
+              </span>
+            </li>
+            <li class="mt-1">
+              <span>
+                Make users aware of the made-to-order process, so they are not surprised by longer delivery times.
+              </span>
+            </li>
+            <li class="mt-1">
+              <span>
+                Make users feel good about buying from the brand.
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <h5 class="light">Shop</h5>
+          <ul>
+            <li class="mt-1">
+              <span>
+                Show users what products exist.
+              </span>
+            </li>
+            <li class="mt-1">
+              <span>
+                Encourage users to purchase products.
+              </span>
+            </li>
+            <li class="mt-1">
+              <span>
+                Provide key information on sizing to maximise satisfaction after purchasing and minimise returns.
+              </span>
+            </li>
+          </ul>
+        </div>
+        <div class="col-6">
+          <h5 class="light">Gallery</h5>
+          <ul>
+            <li class="mt-1">
+              <span>
+                Make users want to buy clothes by aligning themselves with the “complements only” lifestyle.
+              </span>
+            </li>
+            <li class="mt-1">
+              <span>
+                Support the product photos by enabling users to see what the clothes look like on.
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="panel-light pb-4 pt-4">
+    <div class="container text-md-left text-center">
+      <div class="row">
+        <div class="col-md-6 col-12">
+          <h3> 3. Design </h3>
+          <h4>Wireframes</h4>
+          <p>I began by sketching wireframes on paper and then moved on to creating lo-fi digital
+            wireframes using the app Procreate.
+            <br><br>
+            On this project, I did not think it was necessary to create hi-fi wireframes,
+            due to the fact I was working alone and the CMS enabled me to produce and edit live content very quickly.
+            For examples of hi-fi wireframes and prototypes, which I have created using the tool 'Sketch' please see <a
+              class="pointer"
+              (click)="onClick('ice')">previous project. </a></p>
+          <h4>Palette</h4>
+          <p>My designs and images to be used on the site were very colourful. So, I
+            chose a neutral white-grey palette for the site.</p>
+        </div>
+        <div class="col-md-6 col-12 pt-3">
+          <img class="img-fluid"
+            src="assets/images/wireframe.png">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="panel-blue pb-4 pt-4">
+    <div class="container text-md-left text-center">
+      <h4>4. Build</h4>
+      <p>I built the site over a few days using DotGo's website builder. I tested the site on different devices,
+        used media queries and changed column ordering within the Bootstrap grid, to ensure the site was fully
+        responsive.
+      </p>
+      <div class="row text-center">
+        <div class="col-12">
+          <img class="img-fluid"
+            src="assets/images/device-comparison.png">
+          <h6 class="mt-3"><span class="pointer"
+              style=" text-decoration: underline"
+              (click)="OnClickExternal('http://www.complementsonly.co.uk')">
+              <b>view website
+                <i class="fa fa-external-link">
+                </i></b>
+            </span>
+          </h6>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="panel-light pt-4">
+    <div class="container text-md-left text-center">
+      <h3>5. Evaluate </h3>
+      <div class="row">
+        <div class="col-12">
+          <h4>Usability Testing</h4>
+          <p>I decided to test-launch the website first, offering a 10% discount to all users, in exchange for them
+            providing
+            me with feedback. I asked users about their journey through the website and to rank statements from 1-5,
+            based
+            on whether they "strongly agreed" or
+            "strongly
+            disagreed." <br>
+            The statements included:
+          </p>
+          <ul class="light">
+            <li class="light mt-1">
+              "I had to search around the site for a while to get the information I wanted."
+
+            </li>
+            <li class="light mt-1">
+              "I found the pictures in the Gallery page helpful in deciding what to order."
+
+            </li>
+            <li class="light mt-1">
+              "After seeing the website, I changed my mind about what I wanted to buy."
+            </li>
+          </ul>
+        </div>
+      </div>
+      <h5>Results and Amendments</h5>
+      <p>I was pleased that most users strongly agreed that information was easy to find, the site was easy to use
+        and that the images used throughout the site supported the products. My key findings and actions taken were as
+        follows:
+      </p>
       <ol>
         <li>
-          <p>
-            have a strong brand presence, reflecting the core values of the brand in the design of the website
-            itself,
+          <b>Key Finding:</b> Although most users agreed that the pictures in the Gallery made them <em>more </em>
+          inclined to buy products and
+          caused some to change their purchasing decisions, many users did not visit the Gallery
+          during their journey through the website. <br>
+          <b><i class="fa fa-arrow-right"></i> Action: <span class="blue">I included a link to the Gallery in the top
+              navigation bar.</span></b>
         </li>
         <li>
-          <p>
-            pursuade new customers to purchase products and encourage repeat business from existing customers.
-          </p>
+          <b>Key Finding:</b> Although most users agreed that the environmental benefits of a made-to-order process made
+          them more inclined to
+          purchase
+          products, many users failed to visit the About page before placing their order.<br>
+          <b><i class="fa fa-arrow-right"></i> Action: <span class="blue"> I included additional links to the made to
+              order section (using an anchor) of the About page from the Home page.
+            </span></b>
+        </li>
+        <li>
+          <b>Key Finding:</b> Some users
+          highlighted that expected delivery times were not immediately clear.<br>
+          <b><i class="fa fa-arrow-right"></i> Action: <span class="blue"> I clarified expected delivery times in the
+              "made-to order" section and at the checkout.
+            </span></b>
         </li>
       </ol>
+      <p>I plan to carry out further user testing and continually enhance and re-design the site, as and when I create
+        further products.</p>
     </div>
-  </div>
-</div>
-<div class="panel-light">
-  <div class="container text-md-left text-center">
-    <h3> 1. Understanding the Brand and Target Users</h3>
-    <div class="row">
-      <div class="col-md-8 col-12 offset-md-2">
-        <img class="img-fluid"
-          src="assets/images/brand-values.png">
-      </div>
-    </div>
-    <p>I identified the above characterstics, which I referred to whilst designing the website,
-      in order to ensure the site reflected the brand's identity.</p>
-    <h4>Target Users</h4>
-    <p>For the first product launch, my target users were indiviudals aged between 18-30
-      living around London, as the majority of the followers on the Complements Only Instagram were in this
-      demographic.
-      All marketing was carried out via Instagram, so I expected most users to shop using their mobile phones.
-    </p>
-  </div>
-</div>
-<div class="panel-grey pb-4 pt-4">
-  <div class="container text-md-left text-center">
-    <h3>2. Research </h3>
-    <div class="row">
-      <div class="col-12">
-        <h4>Competitor Analysis </h4>
-        <p>I identified key competitors within the industry, such as Carhartt and Stussy, and then compiled a table
-          that outlined how, what and where information was displayed throughout their websites. I focused on the home
-          page in particular. My key findings were:<br>
-        </p>
-        <ul class="blue">
-          <li class="mt-1">
-            <h6>
-              Preference for non text-heavy, image-led sites.
-            </h6>
-          </li>
-          <li class="mt-1">
-            <h6>
-              Cleanly designed websites, with lots of whitespace, were more compelling and satisfying to use.
-            </h6>
-          </li>
-          <li class="mt-1">
-            <h6>
-              Numerous links to products and product categories throughout the home page promoted sales.
-            </h6>
-          </li>
-        </ul>
-      </div>
-
-    </div>
-    <h4 class="pt-1">User Interviews </h4>
-    <p>I questioned individuals within my target demographic, in order to understand their wants, needs and
-      expectations for an e-commerce website. I discovered that:
-    </p>
-    <div class="row pt-1">
-      <div class="col-12 col-md-4 text-center">
-        <img class="findings-icons"
-          src="assets/images/mobile.png">
-        <h6 class="blue">All users frequently purchased clothing through their mobiles. </h6>
-      </div>
-      <div class="col-12 col-md-4 text-center">
-        <img class="findings-icons"
-          src="assets/images/eco.png">
-        <h6 class="blue">Users favoured sustainable brands, however designs were the most important factor
-          when making purchasing decisions. </h6>
-
-      </div>
-      <div class="col-12 col-md-4 text-center">
-        <img class="findings-icons"
-          src="assets/images/paypal.png">
-        <h6 class="blue">Users favoured paypal checkout over manually entering card details and addresses. </h6>
-
-      </div>
-    </div>
-    <h4 class="pt-1">Business Requirements</h4>
-    <p>I noted down the high-level business requirements I needed each page of the website to fulfil:
-    </p>
-    <div class="row">
-      <div class="col-6">
-        <h5 class="light">Home</h5>
-        <ul>
-          <li class="mt-1">
-            <span>
-              Make users want to buy products and showcase which products exist.
-            </span>
-          </li>
-          <li class="mt-1">
-            <span>
-              Provide key information about the company (such as the made-to-order process and availability of custom
-              designs).
-            </span>
-          </li>
-          <li class="mt-1">
-            <span>
-              Make users want to find out more about the brand.
-            </span>
-          </li>
-          <li class="mt-1">
-            <span>
-              Provide quick links for getting in touch.
-            </span>
-          </li>
-        </ul>
-      </div>
-      <div class="col-6">
-        <h5 class="light">About</h5>
-        <ul>
-          <li class="mt-1">
-            <span>
-              Make users aware of the brand's message and therefore also want to be aligned with those values.
-            </span>
-          </li>
-          <li class="mt-1">
-            <span>
-              Make users aware of the made-to-order process, so they are not surprised by longer delivery times.
-            </span>
-          </li>
-          <li class="mt-1">
-            <span>
-              Make users feel good about buying from the brand.
-            </span>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-6">
-        <h5 class="light">Shop</h5>
-        <ul>
-          <li class="mt-1">
-            <span>
-              Show users what products exist.
-            </span>
-          </li>
-          <li class="mt-1">
-            <span>
-              Encourage users to purchase products.
-            </span>
-          </li>
-          <li class="mt-1">
-            <span>
-              Provide key information on sizing to maximise satisfaction after purchasing and minimise returns.
-            </span>
-          </li>
-        </ul>
-      </div>
-      <div class="col-6">
-        <h5 class="light">Gallery</h5>
-        <ul>
-          <li class="mt-1">
-            <span>
-              Make users want to buy clothes by aligning themselves with the “complements only” lifestyle.
-            </span>
-          </li>
-          <li class="mt-1">
-            <span>
-              Support the product photos by enabling users to see what the clothes look like on.
-            </span>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="panel-light pb-4 pt-4">
-  <div class="container text-md-left text-center">
-    <div class="row">
-      <div class="col-md-6 col-12">
-        <h3> 3. Design </h3>
-        <h4>Wireframes</h4>
-        <p>I began by sketching wireframes on paper and then moved on to creating lo-fi digital
-          wireframes using the app Procreate.
-          <br><br>
-          On this project, I did not think it was necessary to create hi-fi wireframes,
-          due to the fact I was working alone and the CMS enabled me to produce and edit live content very quickly.
-          For examples of hi-fi wireframes and prototypes, which I have created using the tool 'Sketch' please see <a
-            class="pointer"
-            (click)="onClick('ice')">previous project. </a></p>
-        <h4>Palette</h4>
-        <p>My designs and images to be used on the site were very colourful. So, I
-          chose a neutral white-grey palette for the site.</p>
-      </div>
-      <div class="col-md-6 col-12 pt-3">
-        <img class="img-fluid"
-          src="assets/images/wireframe.png">
-      </div>
-    </div>
-  </div>
-</div>
-<div class="panel-blue pb-4 pt-4">
-  <div class="container text-md-left text-center">
-    <h4>4. Build</h4>
-    <p>I built the site over a few days using DotGo's website builder. I tested the site on different devices,
-      used media queries and changed column ordering within the Bootstrap grid, to ensure the site was fully responsive.
-    </p>
-    <div class="row text-center">
-      <div class="col-12">
-        <img class="img-fluid"
-          src="assets/images/device-comparison.png">
-        <h6 class="mt-3"><span class="pointer"
-            style=" text-decoration: underline"
-            (click)="OnClickExternal('http://www.complementsonly.co.uk')">
-            <b>view website
-              <i class="fa fa-external-link">
-              </i></b>
-          </span>
-        </h6>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="panel-light pt-4">
-  <div class="container text-md-left text-center">
-    <h3>5. Evaluate </h3>
-    <div class="row">
-      <div class="col-12">
-        <h4>Usability Testing</h4>
-        <p>I decided to test-launch the website first, offering a 10% discount to all users, in exchange for them
-          providing
-          me with feedback. I asked users about their journey through the website and to rank statements from 1-5, based
-          on whether they "strongly agreed" or
-          "strongly
-          disagreed." <br>
-          The statements included:
-        </p>
-        <ul class="light">
-          <li class="light mt-1">
-            "I had to search around the site for a while to get the information I wanted."
-
-          </li>
-          <li class="light mt-1">
-            "I found the pictures in the Gallery page helpful in deciding what to order."
-
-          </li>
-          <li class="light mt-1">
-            "After seeing the website, I changed my mind about what I wanted to buy."
-          </li>
-        </ul>
-      </div>
-    </div>
-    <h5>Results and Amendments</h5>
-    <p>I was pleased that most users strongly agreed that information was easy to find, the site was easy to use
-      and that the images used throughout the site supported the products. My key findings and actions taken were as
-      follows:
-    </p>
-    <ol>
-      <li>
-        <b>Key Finding:</b> Although most users agreed that the pictures in the Gallery made them <em>more </em>
-        inclined to buy products and
-        caused some to change their purchasing decisions, many users did not visit the Gallery
-        during their journey through the website. <br>
-        <b><i class="fa fa-arrow-right"></i> Action: <span class="blue">I included a link to the Gallery in the top
-            navigation bar.</span></b>
-      </li>
-      <li>
-        <b>Key Finding:</b> Although most users agreed that the environmental benefits of a made-to-order process made
-        them more inclined to
-        purchase
-        products, many users failed to visit the About page before placing their order.<br>
-        <b><i class="fa fa-arrow-right"></i> Action: <span class="blue"> I included additional links to the made to
-            order section (using an anchor) of the About page from the Home page.
-          </span></b>
-      </li>
-      <li>
-        <b>Key Finding:</b> Some users
-        highlighted that expected delivery times were not immediately clear.<br>
-        <b><i class="fa fa-arrow-right"></i> Action: <span class="blue"> I clarified expected delivery times in the
-            "made-to order" section and at the checkout.
-          </span></b>
-      </li>
-    </ol>
-    <p>I plan to carry out further user testing and continually enhance and re-design the site, as and when I create
-      further products.</p>
-  </div>
-</div>
-<div class="row flex-row justify-content-end pb-3 mt-md-3 mt-5">
-  <div class="col-md-3 col-12 text-right mr-3">
+  </section>
+</main>
+<footer class="row flex-row justify-content-end pb-3 pt-md-5 pt-5">
+  <div class="col-md-4 col-12 text-right mr-3">
     <h6 class="pointer"> <span class="web"
         (click)="onClick('ice')"> <i class="fa fa-chevron-left"></i> Previous Project</span> | <span
         (click)="onClick('dotgo')"> Next Project <i class="fa fa-chevron-right"></i></span></h6>
   </div>
-</div>
+</footer>

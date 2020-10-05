@@ -1,148 +1,145 @@
-<div #top>
-  <div class="container">
-    <app-nav></app-nav>
-    <div class="container-820">
-      <div class="row flex-row justify-content-between mt-5 intro">
-        <div class="col-md-6 col-12 align-self-start text-md-left text-center">
-          <h1 class="mb-4"><b>Multi-Disciplinary Design Work
-            </b></h1>
-          <p>
-            <br>
-            I've worked in UI & UX, Web and Graphic design, through undertaking both professional and
-            personal
-            projects for the past 4 years.
-            <br><br>
-            I thoroughly enjoy the creative side of design, whilst I also understand
-            the importance of adopting a research-driven and iterative design process.
-            I believe that our fundamental goal, as designers, remains<em>
-              to not only understand
-              users'
-              needs, but to anticipate them and elegantly and beautifully meet them.</em>
-            <br><br>
-            Finding new opportunities to shape little corners of the world fills me
-            with excitement, so please <a style="text-decoration: none; color: rgb(223, 84, 84) !important"
-              class="pointer"
-              href="mailto: annabel.hayes@googlemail.com">get in touch</a> to chat about anything!
-            <br>
-            <br>
-            <h6><span class="pointer d-none d-md-block"
-                style=" text-decoration: underline"
-                (click)="scrollToElement(work)"><b>check out my work <i class="fa fa-chevron-down"></i></b></span></h6>
-        </div>
-        <div class="col-md-5 col-12 align-self-center ml-0 mb-5 ml-md-5">
-          <div *ngIf="!isLoaded"
-            class="spinner"></div>
-          <div [ngStyle]="{ visibility: !isLoaded ? 'hidden': '' }">
-            <img class="img-fluid"
-              style="height: 90%; width: 90%"
-              src="assets/images/diagram.png"
-              (load)="onLoad()">
-          </div>
-          <h6 class="mt-5 text-center"><span class="pointer d-md-none"
-              style=" text-decoration: underline"
-              (click)="scrollToElement(work)"><b>check out my work <i class="fa fa-chevron-down"></i></b></span></h6>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="panel-light full-height">
-  <div class="container">
-    <div class="container-820 mt-5">
-      <div #work
-        class="row flex-row work-row">
-        <div class="col-md-5  col-12 align-self-center text-md-left text-center">
-          <h2><b>International Copyright Enterprise & Stage Enterprises</b></h2>
-          <p class="mt-3">I designed and developed a Master Data Management system to enable the music
-            societies STIM, GEMA and PRS to collect and store audiovisual production data.</p>
-          <h5><span class="badge badge-md badge-ui mr-2">UI & UX Design</span>
-            <span class="badge badge-md badge-secondary">Frontend</span></h5>
-          <h6 class="mt-4"><span class="pointer"
-              style=" text-decoration: underline"
-              (click)="onClick('ice')">
-              <b>view project
-                <i class="fa fa-external-link">
-                </i></b>
-            </span>
-          </h6>
-        </div>
-        <div class="col-md-7 col-12">
-          <img class="img-fluid"
-            src="assets/images/ice.png">
-        </div>
-      </div>
-      <div class="row flex-row row-2"
-        name="co"
-        id="co">
-        <div class="col-md-7 col-12 mt-3 align-self-start text-md-left text-center pr-md-5 pr-0 ml-0 pl-0">
-          <img class="img-fluid"
-            src="assets/images/comp-only.png">
-        </div>
-        <div class="col-md-5 col-12 align-self-center text-md-left text-center order-first order-md-2">
-          <h2><b>Complements Only</b></h2>
-          <p class="mt-3">I created graphic artwork, developed a brand identity and designed and built an e-commerce
-            site for
-            a
-            clothing brand I founded. I'm currently carrying out Usability Testing on the site.</p>
-          <h5> <span class="badge badge-graphic mr-2">Graphic Design</span>
-            <span class="badge badge-web mr-2">Web Design</span>
-            <span class="badge badge-ui mr-2">UI & UX</span>
-            <span class="badge badge-secondary mt-sm-2 mr-2">HTML</span>
-            <span class="badge badge-secondary mt-sm-2">CSS</span></h5>
-          <h6 class="mt-4"><span class="pointer"
-              style=" text-decoration: underline"
-              (click)="onClick('complements-only')">
-              <b>view project (ongoing)
-                <i class="fa fa-external-link">
-                </i></b>
-            </span>
-          </h6>
-        </div>
-      </div>
-      <div class="row flex-row work-row row-3">
-        <div class="col-md-5 col-12 mb-2 align-self-center text-md-left text-center">
-          <h2><b>Sassy Knacks</b></h2>
-          <p class="mt-3">I aided in designing and building an e-commerce website for a bespoke gifts store. I'm
-            currently
-            completing this project for free, in aid of BrainresearchUK.
-          </p>
-          <h5><span class="badge badge-md badge-web mr-2">Web Design</span>
-            <span class="badge badge-secondary mr-2">HTML</span>
-            <span class="badge badge-secondary">CSS</span></h5>
-          <h6 class="mt-4 text-secondary"><span class="pointer">
-              <b>CASE STUDY COMING SOON</b>
-            </span>
-          </h6>
-        </div>
-        <div class="col-md-7 col-12">
-          <img class="img-fluid"
-            src="assets/images/s-k.png">
-        </div>
-      </div>
-      <div class="row flex-row work-row row-3">
-        <div class="col-md-7 col-12 align-self-start text-md-left text-center pr-md-5 pr-0 ml-0 pl-0">
-          <img class="img-fluid"
-            src="assets/images/dotgo.png">
-        </div>
-        <div class="col-md-5 col-12 order-first order-md-2 align-self-center text-md-left text-center">
-          <h2><b>DotGO</b></h2>
-          <p class="mt-3">I sold, designed and implemented custom-built websites for small businesses
-            throughout the UK.</p>
-          <h5><span class="badge badge-md badge-web mr-2">Web Design</span>
-            <span class="badge badge-secondary mr-2">Sales</span>
-            <span class="badge badge-secondary mt-sm-2 mr-2">Copywriting</span></h5>
-          <h6 class="mt-4"><span class="pointer"
-              style=" text-decoration: underline"
-              (click)="onClick('dotgo')">
-              <b>view projects
-                <i class="fa fa-external-link">
-                </i></b>
-            </span>
-          </h6>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- </div>
-</div> -->
+ <app-nav></app-nav>
+ <main>
+   <section>
+     <div class="container">
+       <div class="row flex-row justify-content-between mt-5 intro">
+         <div class="col-md-6 col-12 align-self-start text-md-left text-center">
+           <h1 class="mb-4"><b>Multi-Disciplinary Design Work
+             </b></h1>
+           <p>
+             <br>
+             I've worked in UI & UX, Web and Graphic design, through undertaking both professional and
+             personal
+             projects for the past 4 years.
+             <br><br>
+             I thoroughly enjoy the creative side of design, whilst I also understand
+             the importance of adopting a research-driven and iterative design process.
+             I believe that our fundamental goal, as designers, remains<em>
+               to not only understand
+               users'
+               needs, but to anticipate them and elegantly and beautifully meet them.</em>
+             <br><br>
+             Finding new opportunities to shape little corners of the world fills me
+             with excitement, so please <a style="text-decoration: none; color: rgb(223, 84, 84) !important"
+               class="pointer"
+               href="mailto: annabel.hayes@googlemail.com">get in touch</a> to chat about anything!
+             <br>
+             <br>
+             <h6><span class="pointer d-none d-md-block"
+                 style=" text-decoration: underline"
+                 (click)="scrollToElement(work)"><b>check out my work <i class="fa fa-chevron-down"></i></b></span>
+             </h6>
+         </div>
+         <div class="col-md-5 col-12 align-self-center ml-0 mb-5 ml-md-5">
+           <div *ngIf="!isLoaded"
+             class="spinner"></div>
+           <div [ngStyle]="{ visibility: !isLoaded ? 'hidden': '' }">
+             <img class="img-fluid"
+               style="height: 90%; width: 90%"
+               src="assets/images/diagram.png"
+               (load)="onLoad()">
+           </div>
+           <h6 class="mt-5 text-center"><span class="pointer d-md-none"
+               style=" text-decoration: underline"
+               (click)="scrollToElement(work)"><b>check out my work <i class="fa fa-chevron-down"></i></b></span></h6>
+         </div>
+       </div>
+     </div>
+   </section>
+   <section class="panel-light full-height">
+     <div class="container pt-4">
+         <article #work
+           class="row flex-row work-row">
+           <div class="col-md-5  col-12 align-self-center text-md-left text-center">
+             <h2><b>International Copyright Enterprise & Stage Enterprises</b></h2>
+             <p class="mt-3">I designed and developed a Master Data Management system to enable the music
+               societies STIM, GEMA and PRS to collect and store audiovisual production data.</p>
+             <h5><span class="badge badge-md badge-ui mr-2">UI & UX Design</span>
+               <span class="badge badge-md badge-secondary">Frontend</span></h5>
+             <h6 class="mt-4"><span class="pointer"
+                 style=" text-decoration: underline"
+                 (click)="onClick('ice')">
+                 <b>view project
+                   <i class="fa fa-external-link">
+                   </i></b>
+               </span>
+             </h6>
+           </div>
+           <div class="col-md-7 col-12">
+             <img class="img-fluid"
+               src="assets/images/ice.png">
+           </div>
+         </article>
+         <article class="row flex-row row-2"
+           name="co"
+           id="co">
+           <div class="col-md-7 col-12 mt-3 align-self-start text-md-left text-center pr-md-5 pr-0 ml-0 pl-0">
+             <img class="img-fluid"
+               src="assets/images/comp-only.png">
+           </div>
+           <div class="col-md-5 col-12 align-self-center text-md-left text-center order-first order-md-2">
+             <h2><b>Complements Only</b></h2>
+             <p class="mt-3">I created graphic artwork, developed a brand identity and designed and built an e-commerce
+               site for
+               a
+               clothing brand I founded. I'm currently carrying out Usability Testing on the site.</p>
+             <h5> <span class="badge badge-graphic mr-2">Graphic Design</span>
+               <span class="badge badge-web mr-2">Web Design</span>
+               <span class="badge badge-ui mr-2">UI & UX</span>
+               <span class="badge badge-secondary mt-sm-2 mr-2">HTML</span>
+               <span class="badge badge-secondary mt-sm-2">CSS</span></h5>
+             <h6 class="mt-4"><span class="pointer"
+                 style=" text-decoration: underline"
+                 (click)="onClick('complements-only')">
+                 <b>view project (ongoing)
+                   <i class="fa fa-external-link">
+                   </i></b>
+               </span>
+             </h6>
+           </div>
+         </article>
+         <article class="row flex-row work-row row-3">
+           <div class="col-md-5 col-12 mb-2 align-self-center text-md-left text-center">
+             <h2><b>Sassy Knacks</b></h2>
+             <p class="mt-3">I aided in designing and building an e-commerce website for a bespoke gifts store. I'm
+               currently
+               completing this project for free, in aid of BrainresearchUK.
+             </p>
+             <h5><span class="badge badge-md badge-web mr-2">Web Design</span>
+               <span class="badge badge-secondary mr-2">HTML</span>
+               <span class="badge badge-secondary">CSS</span></h5>
+             <h6 class="mt-4 text-secondary"><span class="pointer">
+                 <b>CASE STUDY COMING SOON</b>
+               </span>
+             </h6>
+           </div>
+           <div class="col-md-7 col-12">
+             <img class="img-fluid"
+               src="assets/images/s-k.png">
+           </div>
+         </article>
+         <article class="row flex-row work-row row-3">
+           <div class="col-md-7 col-12 align-self-start text-md-left text-center pr-md-5 pr-0 ml-0 pl-0">
+             <img class="img-fluid"
+               src="assets/images/dotgo.png">
+           </div>
+           <div class="col-md-5 col-12 order-first order-md-2 align-self-center text-md-left text-center">
+             <h2><b>DotGO</b></h2>
+             <p class="mt-3">I sold, designed and implemented custom-built websites for small businesses
+               throughout the UK.</p>
+             <h5><span class="badge badge-md badge-web mr-2">Web Design</span>
+               <span class="badge badge-secondary mr-2">Sales</span>
+               <span class="badge badge-secondary mt-sm-2 mr-2">Copywriting</span></h5>
+             <h6 class="mt-4"><span class="pointer"
+                 style=" text-decoration: underline"
+                 (click)="onClick('dotgo')">
+                 <b>view projects
+                   <i class="fa fa-external-link">
+                   </i></b>
+               </span>
+             </h6>
+           </div>
+         </article>
+       </div>
+   </section>
+ </main>
