@@ -1,132 +1,131 @@
-<div #top>
-  <div class="container">
-    <app-nav></app-nav>
-    <div class="container-820">
-      <div class="row flex-row justify-content-between mt-5 intro">
-        <div class="col-md-6 col-12 align-self-start text-md-left text-center">
-          <h1 class="mb-4"><b>2 Years+ in Frontend Development
-            </b></h1>
-          <p>
-            <br>
-            I worked as a Junior Frontend Developer from 07/17-04/19, at International Copyright
-            Enterprise and Stage Enterprises. I made up one of only two Frontend developers on the <a
-              href="/portfolio/ice">project</a>, working
-            remotely in an Agile environment, using Angular 2/4/5/6.
-            <br><br>
-            Since then, I have continued to enhance my Frontend development skills. I often write HTML and CSS for <a
-              href="/portfolio/design#co">new websites</a> I'm building.
-            I have also coded and deployed this entire portfolio
-            myself, using Angular and Github Pages.<br><br>
-            <a class="pink small"
-              href="https://github.com/annabelhayes/portfolio"> View
-              portfolio code <i class="pink fa fa-external-link"></i></a>
-        </div>
-        <div class="col-12 col-md-6 text-md-right text-center">
-          <div *ngIf="!isLoaded"
-            class="spinner"></div>
-          <div [ngStyle]="{ visibility: !isLoaded ? 'hidden': '' }">
-            <img class="img-fluid"
-              src="assets/images/technologies.png"
-              (load)="onLoad()">
-          </div>
+ <app-nav></app-nav>
+ <main>
+   <div class="container">
+     <section>
+       <div class="row flex-row justify-content-between mt-5 intro">
+         <div class="col-md-6 col-12 align-self-start text-md-left text-center">
+           <h1 class="mb-4"><b>2 Years+ in Frontend Development
+             </b></h1>
+           <p>
+             <br>
+             I worked as a Junior Frontend Developer from 07/17-04/19, at International Copyright
+             Enterprise and Stage Enterprises. I made up one of only two Frontend developers on the <a
+               href="/portfolio/ice">project</a>, working
+             remotely in an Agile environment, using Angular 2/4/5/6.
+             <br><br>
+             Since then, I have continued to enhance my Frontend development skills. I often write HTML and CSS for <a
+               href="/portfolio/design#co">new websites</a> I'm building.
+             I have also coded and deployed this entire portfolio
+             myself, using Angular and Github Pages.<br><br>
+             <a class="pink small"
+               href="https://github.com/annabelhayes/portfolio"> View
+               portfolio code <i class="pink fa fa-external-link"></i></a>
+         </div>
+         <div class="col-12 col-md-6 text-md-right text-center">
+           <div *ngIf="!isLoaded"
+             class="spinner"></div>
+           <div [ngStyle]="{ visibility: !isLoaded ? 'hidden': '' }">
+             <img class="img-fluid"
+               src="assets/images/technologies.png"
+               (load)="onLoad()">
+           </div>
+         </div>
+       </div>
+     </section>
+     <section class="row flex-row justify-content-between mt-3 mb-2">
+       <article class="card col-12 col-md-4">
+         <div class="card-body">
+           <div>
+             <h3 class="card-title pink mb-1 text-center"><b>LANGUAGES & FRAMEWORKS</b></h3>
+             <ul class="mt-2">
+               <li>
+                 Angular 2/4/5/6 (Components, Services, Templates, Modules, Bundling/Compiling/Build Pipelines)
+               </li>
 
-        </div>
-      </div>
-      <div class="row flex-row justify-content-between mt-3 mb-2">
-        <div class="card col-12 col-md-4">
-          <div class="card-body">
-            <div>
-              <h3 class="card-title pink mb-1 text-center"><b>LANGUAGES & FRAMEWORKS</b></h3>
-              <ul class="mt-2">
-                <li>
-                  Angular 2/4/5/6 (Components, Services, Templates, Modules, Bundling/Compiling/Build Pipelines)
-                </li>
-
-                <li>
-                  Bootstrap 4.0
-                </li>
-                <li>
-                  Typescript
-                </li>
-                <li>
-                  Javascript (ES6)
-                </li>
-                <li>
-                  CSS
-                </li>
-                <li>
-                  HTML5
-                </li>
-                <li>
-                  Redux
-                </li>
-                <li>
-                  Jasmine, Karma & Protractor
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="card col-12 col-md-4">
-          <div class="card-body">
-            <div>
-              <h3 class="card-title pink mt-2 mb-1 text-center"><b>GENERAL CODING SKILLS AND PRINCIPLES</b></h3>
-              <ul class="mt-2">
-                <li>
-                  OOP
-                </li>
-                <li>
-                  Reactive Programming (Observables)
-                </li>
-                <li>
-                  Functional Programming (map, filter…)
-                </li>
-                <li>
-                  Developing Unit Tests
-                </li>
-                <li>
-                  Developing E2E Tests
-                </li>
-                <li>
-                  Responsive Webdesign
-                </li>
-                <li>
-                  General Debugging
-                </li>
-                <li>
-                  Communication/Coworking with Backend Team (API integration & problem solving)
-                </li>
-                <li>
-                  UX Prototyping and Animation
-                </li>
-                <li>
-                  Iterative UX Design
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="card col-md-4 col-12">
-          <div class="card-body">
-            <div>
-              <h3 class="card-title pink mt-2 mb-1 text-center"><b>DEVELOPMENT WORKFLOW</b></h3>
-              <ul class="mt-2">
-                <li>
-                  Github - I am familiar with Git Flow (Feature branches, Pull Requests, the “git rebase” command,
-                  useful Commit Messages)
-                </li>
-                <li>
-                  Agile - worked in bi-weekly Sprints. I participated in completing User Stories, estimating Story
-                  points, Daily meetings, Planning meetings and "Retros"
-                </li>
-                <li>
-                  Remote working - for upwards of 70% of design/development time
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+               <li>
+                 Bootstrap 4.0
+               </li>
+               <li>
+                 Typescript
+               </li>
+               <li>
+                 Javascript (ES6)
+               </li>
+               <li>
+                 CSS
+               </li>
+               <li>
+                 HTML5
+               </li>
+               <li>
+                 Redux
+               </li>
+               <li>
+                 Jasmine, Karma & Protractor
+               </li>
+             </ul>
+           </div>
+         </div>
+       </article>
+       <article class="card col-12 col-md-4">
+         <div class="card-body">
+           <div>
+             <h3 class="card-title pink mt-2 mb-1 text-center"><b>GENERAL CODING SKILLS AND PRINCIPLES</b></h3>
+             <ul class="mt-2">
+               <li>
+                 OOP
+               </li>
+               <li>
+                 Reactive Programming (Observables)
+               </li>
+               <li>
+                 Functional Programming (map, filter…)
+               </li>
+               <li>
+                 Developing Unit Tests
+               </li>
+               <li>
+                 Developing E2E Tests
+               </li>
+               <li>
+                 Responsive Webdesign
+               </li>
+               <li>
+                 General Debugging
+               </li>
+               <li>
+                 Communication/Coworking with Backend Team (API integration & problem solving)
+               </li>
+               <li>
+                 UX Prototyping and Animation
+               </li>
+               <li>
+                 Iterative UX Design
+               </li>
+             </ul>
+           </div>
+         </div>
+       </article>
+       <article class="card col-md-4 col-12">
+         <div class="card-body">
+           <div>
+             <h3 class="card-title pink mt-2 mb-1 text-center"><b>DEVELOPMENT WORKFLOW</b></h3>
+             <ul class="mt-2">
+               <li>
+                 Github - I am familiar with Git Flow (Feature branches, Pull Requests, the “git rebase” command,
+                 useful Commit Messages)
+               </li>
+               <li>
+                 Agile - worked in bi-weekly Sprints. I participated in completing User Stories, estimating Story
+                 points, Daily meetings, Planning meetings and "Retros"
+               </li>
+               <li>
+                 Remote working - for upwards of 70% of design/development time
+               </li>
+             </ul>
+           </div>
+         </div>
+       </article>
+     </section>
+   </div>
+ </main>
